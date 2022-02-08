@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+/* 사진요소 */
+#aboutMe .pictures{
+    position: absolute;
+    top: 30%;
+    left: 180px;
+    width: 298px;
+    height: 357px;
+}
+#aboutMe .pictures .circle{
+    width: 145px;
+    height: 145px;
+    background: #FF9D43;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    z-index: -1;
+}
+#aboutMe .pictures .flower{
+    position: absolute;
+    bottom: 15px;
+    right: -30px;
+
+}
+/* 텍스트요소 묶음 */
+#aboutMe .aboutwrap{
+    width: 620px;
+    height: 400px;
+    position: absolute;
+    right: 12%;
+    top: 20%;
+}
+#aboutMe h2{
+    font-size: 65px;
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.25);
+    margin-left: -80px;
+    margin-bottom: 15px;
+}
+#aboutMe .title{
+    font-size: 25px;
+    font-weight: bold;
+}
+#aboutMe .hashtag{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+#aboutMe .content{
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+#aboutMe .sub_title{
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    font-size: 30px;
+    font-weight: bold;
+}
+#aboutMe .hide-content{
+    font-size: 16px;
+    margin-bottom: 20px;
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    left:0;
+    transition: 0.5s;
+}
+#aboutMe .content:hover .hide-content{
+    top: 0;
+}
+#aboutMe .content:hover .sub_title{
+    top: -150px;
+}
+#aboutMe .skills{
+    font-size: 25px;
+    width: 100%;
+    position: absolute;
+    bottom: -70px;
+}
+#aboutMe .skills ul{
+    display: flex;
+    justify-content: center;
+}
+#aboutMe .skills li{
+    margin-left: 35px;
+    text-align: center;
+}
+#aboutMe .skills span{
+    font-size: 55px;
+}

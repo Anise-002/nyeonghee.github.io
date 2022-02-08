@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+#project{
+    height: auto;
+}
+#Team, #Personal{
+    height: auto;
+    position: relative;
+}
+#project section{
+    height: 100%;
+}
+#project .title{
+    width: 910px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 110px;
+    z-index: 1;
+}
+#project .clear{
+    clear:both;
+}
+#project .flower{
+    position: absolute;
+    left: 190px;
+    width: 80px;
+}
+
+#project .title h2{ 
+    font-size: 65px;
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    right: 130px;
+}
+/* 타이틀 가로 꾸밈 요소 */
+#project .line1{
+    width: 180px;
+    position: absolute;
+    left: 0;
+}
+#project .line2{
+    width: 110px;
+    position: absolute;
+    right: 0;
+}
+
+/* 프로젝트 콘텐츠 */
+/* 공통css */
+#project .project_wrap{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#project article{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);    
+}
+#project article.pro1{
+    transform: translateY(-40%);
+}
+#project .pro-con-wrap{
+    width: 398px;
+    padding: 0 10px;
+    margin-right: 20px;
+
+}
+#project .pro-con-wrap h3{
+    font-size: 55px;
+    margin-left: -85px;
+}
+.color_oran{
+    color: #FF9D43;
+    margin-right: 20px;
+}
+#project .pro-con-wrap h4{
+    font-size: 20px;
+    
+}
+#project .pro-con p{
+    margin-bottom: 5px;
+}
+#project .con-list, #project .con-detail{
+    margin-left: 20px;
+}
+
+/* 프로젝트 이미지 */
+/* 왼쪽위치 이미지(공통) */
+#project .pro-img{
+    top: 20px;
+    width: 540px;
+    position: relative;
+    height: 390px;
+}
+#project .pro-img img{
+    display: block;
+    position: absolute;
+}
+#project .pro-img img:first-child{
+    top: 0px;
+    width: 500px;
+}  
+#project .pro-img img:last-child{
+    bottom: 0;
+    right: 0;
+    
+}   
+/* 오른쪽위치 이미지 */
+#project .img_right{
+    margin-right: 90px;
+}
+#project .img_right img:first-child{
+    right: 0;
+}
+
+#project .img_right img:last-child{
+    left: 0;
+    bottom: 0;
+}
+
+

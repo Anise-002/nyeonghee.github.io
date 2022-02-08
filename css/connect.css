@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+#connect .title{
+    width: 910px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 110px;
+    z-index: 1;
+}
+#connect .clear{
+    clear:both;
+}
+#connect .flower{
+    position: absolute;
+    left: 190px;
+    width: 80px;
+}
+#connect .title h2{ 
+    font-size: 65px;
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    right: 130px;
+}
+/* 타이틀 가로 꾸밈 요소 */
+#connect .line1{
+    width: 180px;
+    position: absolute;
+    left: 0;
+}
+#connect .line2{
+    width: 110px;
+    position: absolute;
+    right: 0;
+}
+/* 콘텐츠 위치 */
+.conncet-con-wrap{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 350px;
+    top: 50%;
+    transform: translateY(-40%);
+}
+/*배경 이미지 */
+#connect .bg-img{
+    display: block;
+    position: absolute;
+    right: 0;
+}
+/* 콘텐츠 텍스트 위치 */
+#connect .connect-con{
+    position: absolute;
+    top: 50%;
+    left: 11%;
+    transform: translateY(-50%);
+    text-align: right;
+}
+#connect .connect-con em{
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: -24px;
+}
+#connect .connect-con>span{
+    font-size: 50px;
+}
+#connect .connect-con p{
+    font-size: 20px;
+    width: 100%;
+    width: 600px;
+}
+#connect .btn_more{
+    text-align: right;
+    display: flex;
+    justify-content: right;
+}
+#connect .btn_more .notion{
+    display: flex;
+    align-items: center;
+}
+#connect .btn_more .notion img{
+    margin-right: 10px;
+}
+.copyright{
+    position: absolute;
+    bottom: 120px;
+    right: 7%;
+}
+
+
+
+footer{
+    width: 100%;
+    height: 50px;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+}
