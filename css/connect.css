@@ -13,27 +13,28 @@
 #connect .clear{
     clear:both;
 }
-#connect .flower{
-    position: absolute;
-    left: 190px;
-    width: 80px;
-}
 #connect .title h2{ 
     font-size: 65px;
     text-shadow: 5px 5px rgba(0, 0, 0, 0.25);
     position: absolute;
     right: 130px;
 }
+
 /* 타이틀 가로 꾸밈 요소 */
 #connect .line1{
     width: 180px;
     position: absolute;
-    left: 0;
+    left: 200px;
 }
 #connect .line2{
     width: 110px;
     position: absolute;
     right: 0;
+}
+#connect .flower{
+    position: absolute;
+    right:420px;
+    width: 80px;
 }
 /* 콘텐츠 위치 */
 .conncet-con-wrap{
@@ -91,10 +92,3 @@
 
 
 
-footer{
-    width: 100%;
-    height: 50px;
-    background: #000;
-    position: absolute;
-    bottom: 0;
-}

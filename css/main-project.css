@@ -46,6 +46,16 @@
     position: absolute;
     right: 0;
 }
+/* personal파트 꾸밈요소 */
+#Personal .personal .line1{
+    left: 0;
+    width: 8%;
+}
+#Personal .personal .flower{
+    left: 80px;
+    width: 60px;
+}
+
 
 /* 프로젝트 콘텐츠 */
 /* 공통css */
@@ -62,10 +72,11 @@
     align-items: center;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);    
+    left: 50%;
+    transform: translate(-50%,-50%);    
 }
 #project article.pro1{
-    transform: translateY(-40%);
+    transform: translate(-50%,-40%);
 }
 #project .pro-con-wrap{
     width: 398px;
@@ -77,19 +88,16 @@
     font-size: 55px;
     margin-left: -85px;
 }
-.color_oran{
-    color: #FF9D43;
+#project .pro-con-wrap h3 span{
     margin-right: 20px;
 }
 #project .pro-con-wrap h4{
     font-size: 20px;
+    font-family: 'Abril Fatface','Song Myung';
     
 }
 #project .pro-con p{
-    margin-bottom: 5px;
-}
-#project .con-list, #project .con-detail{
-    margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 /* 프로젝트 이미지 */
@@ -127,3 +135,71 @@
 }
 
 
+/*-----사이드 프로젝트 파트----- */
+/*-- 제목 요소 위치--*/
+#project .side_project .line1{
+    left: 150px;
+}
+#project .side_project .flower{
+    left: 350px;
+    width: 60px;
+}
+/*-- 사이드 리스트 박스-- */
+#project .side_list{
+    width: 967px;
+    height: 487px;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    transform: translate(-50%, -30%);
+}
+#project .side_list div{
+    width: 315px;
+    height: 45%;
+    text-align: center;
+}
+#project .side_list .img_wrap{
+    width: 305px;
+    height: 202px;
+    position: relative;
+    overflow: hidden;
+}
+#project .side_list .img_wrap a{
+    position: absolute;
+    display: block;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #000;
+    border-radius: 50px;
+    padding: 5px 10px;
+    font-size: 13px;
+    transition: 0.5s;
+}
+#project .side_list .img_wrap::before{
+    content : " ";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: rgba(255, 176, 104, 0.37);
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+#project .side_list p{
+    margin-top: 5px;
+}
+/* ---호버효과--- */
+#project .side_list .img_wrap:hover a:hover{
+    background: #FF9D43;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: 0.1s;
+}
+#project .side_list .img_wrap:hover a{
+    top: 50%;
+}
+#project .side_list .img_wrap:hover::before{
+    top: 0;
+}

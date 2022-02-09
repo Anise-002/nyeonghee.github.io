@@ -4,11 +4,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 /* font-family: 'Abril Fatface', cursive; */
 @font-face {
-    font-family: 'Kyobo';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/KyoboHandwriting2020A.woff') format('woff');
+    font-family: 'Yes';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/YdestreetL.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
+
+
 
 *{margin: 0; padding: 0; box-sizing: border-box;}
 ul {list-style: none;}
@@ -48,6 +50,14 @@ body{
     background: #FF9D43;
     color: #fff;
     border: 1px solid #fff;
+}
+
+/* 포인트 색 */
+.c-orange{
+    color: #FF9D43;
+}
+.f-Ydes{
+    font-family:'Yes';
 }
 
 /* ***********해더********** */
@@ -278,7 +288,8 @@ section{
 }
 #intro .textwrap article h2 span{
     display: inline-block;
-    transform: translateY(130px);
+    bottom: -130px;
+    /* transform: translateY(130px); */
     transition: 0.8s;
     position: relative;
 }
@@ -296,14 +307,15 @@ section{
 #intro .textwrap article span:last-child{
     transition-delay: 0.3s;
 }
-#intro .textwrap article.textup h2 span{
+/* #intro .textwrap article.textup h2 span{
+    bottom: 0;
     transform: translateY(0px);
     position: relative;
     transition-delay: 1.7s;
 }
 #intro .textwrap article.textup span.size-small{
     transition-delay: 1.9s;
-}
+} */
 #intro .intro-cont{
     line-height: normal;
     width: 100%;

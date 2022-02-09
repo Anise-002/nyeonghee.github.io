@@ -8,6 +8,10 @@
     width: 298px;
     height: 357px;
 }
+#aboutMe svg{
+    width: 350px;
+    display: none;
+}
 #aboutMe .pictures .circle{
     width: 145px;
     height: 145px;
@@ -50,6 +54,7 @@
     width: 100%;
     overflow: hidden;
     position: relative;
+    margin-top: 20px;
 }
 #aboutMe .sub_title{
     height: 150px;
@@ -70,6 +75,7 @@
     top: 150px;
     left:0;
     transition: 0.5s;
+    font-family: 'Yes';
 }
 #aboutMe .content:hover .hide-content{
     top: 0;
@@ -81,7 +87,7 @@
     font-size: 25px;
     width: 100%;
     position: absolute;
-    bottom: -70px;
+    bottom: -25px;
 }
 #aboutMe .skills ul{
     display: flex;
@@ -90,7 +96,10 @@
 #aboutMe .skills li{
     margin-left: 35px;
     text-align: center;
+    
 }
 #aboutMe .skills span{
     font-size: 55px;
+    text-shadow: 1px 1px 5px gray;
 }
+
