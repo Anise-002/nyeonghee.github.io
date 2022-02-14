@@ -229,11 +229,11 @@ header .line2{
 
 /* ***************메인파트******************** */
 #wrapper{
-    max-width: 100%;
-    margin: 0 auto;
+    min-width:100vh;
     position: absolute;
 }
 section{
+    width: 90vw;
     min-height: 720px;
     height: 100vh;
     position: relative;
@@ -248,7 +248,7 @@ section{
 #intro .textwrap{
     position: absolute;
     top: 35%;
-    right: 10%;
+    right: 20%;
     line-height: 45px;
 }
 #intro .textwrap>h3{
@@ -370,7 +370,7 @@ section{
 }
 #intro .stamp{
     top: 20%;
-    right: 6%;
+    right: 15%;
     opacity: 0;
     transition: all 1.5s;
 }

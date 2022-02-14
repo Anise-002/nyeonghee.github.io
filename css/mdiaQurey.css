@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+/*********** 모니터1 노트북 ***********/
+@media screen and (max-width : 1366px) and (min-width:1200px){
+    header{
+        width: 100vw;
+        min-width: 90vw;
+    }
+     /* ---main------- */
+    /* intro */
+    .nav_side{
+        right: -3%;
+        transition: 0.3s;
+    }
+    #intro .textwrap{
+        right: 10%;
+        transition: 0.5s;
+    }
+    #intro .stamp{
+        right: 5%;
+        transition: all 0.3s;
+    }
+    
+    /* about me */
+    #aboutMe .pictures{
+        left: 120px;
+        transition: 0.3s;
+    }
+    #aboutMe .aboutwrap{
+        right: 5%;
+        transition: 0.3s;
+    }
+      /*project  */
+      #project .title{
+        right: 0%;
+    }
+
+}
+
+
+
+/*********** 모니터2 (작은 모니터) ***********/
+@media screen and (max-width : 1199px) and (min-width:1070px){
+    header{
+        width: 100vw;
+        min-width: 100vw;
+    }
+    #intro .textwrap{
+        right: 10%;
+        transition: 0.5s;
+    }
+    /* ---main------- */
+    /* intro */
+    .nav_side{
+        right: -5%;
+        transition: 0.3s;
+    }
+     #intro .textwrap{
+        right: 10%;
+        transition: 0.5s;
+    }
+    #intro .stamp{
+        right: 5%;
+        transition: all 0.3s;
+    }
+    .bg-imgs{
+        position: absolute;
+        left: 0%;
+    }
+    /* about me */
+    #aboutMe .pictures{
+        left: 3%;
+        transition: 0.5s;
+    }
+    #aboutMe .aboutwrap{
+        right: 3%;
+        transition: 0.3s;
+    }
+    /*project  */
+    #project .title{
+        right: -1%;
+    }
+    #project .pro-img {
+        width: 460px;
+        height: 330px;
+        transition: 0.5s;
+    }
+    #project .pro-img img:first-child{
+        width: 430px;
+        transition: 0.5s;
+    }
+    #project .pro-img img:last-child{
+        width: 100px;
+        transition: 0.5s;
+    }
+    /* connect */
+    #connect .connect-con {
+        left: -5%;
+        transition: 0.5s;    
+    }
+    
+}
+
+
+
+/*********** 태블릿 ***********/
+@media screen and (max-width : 1069px) and (min-width:786px){
+    header{
+        width: 100vw;
+        min-width: 100vw;
+    }
+    header nav h1{
+        left: 40px;
+    }
+    header nav>ul{
+        right: 70px;
+    }
+    
+
+    #intro .textwrap{
+        right: 10%;
+        transition: 0.5s;
+    }
+    #intro .textwrap>h3{
+        font-size: 30px;
+    }
+    #intro .textwrap article h2{
+        font-size: 90px;
+    }
+    #intro .textwrap h2 span.size-small{
+        font-size: 50px;
+    }
+    .nav_side{
+        right: -4%;
+        transition: 0.3s;
+    }
+    #aboutMe .pictures{
+        left: 120px;
+        transition: 0.3s;   
+    }
+      .bg-imgs{
+        position: absolute;
+        left: 0%;
+    }
+}
+
+/*********** 모바일 ***********/
+@media screen and (max-width:785px) {
+    header nav .gnb{
+        display: none;
+    }
+}
