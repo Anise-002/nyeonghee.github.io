@@ -201,8 +201,8 @@ header .list_mobile_menu{
     background: #FF9D43;
     position: absolute;
     top: 0;
-    right: 0;
-    display: none;
+    right: -100%;
+    display: block;
 }
 header .list_mobile_menu .gnb{
     position: absolute;

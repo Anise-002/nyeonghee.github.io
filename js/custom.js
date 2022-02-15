@@ -82,20 +82,38 @@ $(function(){
         })
     });
 
-    //모바일 토글 버튼 클릭 효과
+    //모바일 토글 메뉴 버튼 클릭 효과
     var btn_menu = $('.btn_mobile_menu');
-    var menu_list =$('.list_mobile_menu');
+    var menu_list =$('.list_mobile_menu'); 
+
+    function moveOut(){
+        btn_menu.removeClass('active').css('z-index' , '10');
+        menu_list.stop().animate({
+            'right':'-100%',
+            'display': 'block'
+        });
+    }
+    function moveIn(){
+        btn_menu.addClass('active').css('z-index' , '10');  
+        menu_list.stop().animate({
+            'right':'0%',
+            'display': 'block'
+        });  
+    }
 
     btn_menu.click(function(){        
-        menu_list.toggle('300',function(){
             if(btn_menu.hasClass('active')){
-                btn_menu.removeClass('active').css('z-index' , '10');  
+                moveOut();
             }else{
-                btn_menu.addClass('active').css('z-index' , '10');  
-            }
-            menu_list.stop().animate({'right':'0%'});          
+                moveIn();
+            }    
         });
-    });
+    menu_list.click(function(){
+        moveOut()
+    })    
+        
+
+    });  
       
 
 
@@ -106,4 +124,3 @@ $(function(){
    
     
 
-})
