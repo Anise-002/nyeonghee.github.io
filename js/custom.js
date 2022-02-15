@@ -10,9 +10,29 @@ $(function(){
         $('.decoration_vertical .line').stop().animate({'height':'60%'},1500);
         $('#intro .decoration_horizontal').stop().animate({'width':'90%'})
     
-        //배경꾸밈 애니메이션
+        //배경꾸밈 애니메이션       
         $('.flower, .leaf, .stamp').stop().css({'opacity':'1','transition-delay':'1s'});
-        $('.bg-imgs').css({'width':'467px','height': '460px','opacity':'1','top':'25%','left':'7%','border-radius': '0'});
+        
+        //intro 배경 이미지 화면크기에 따른 이미지 크기 변화
+        if($(window).width() <= 754){
+            $('.bg-imgs').css({'width':'400px','height': '500px','opacity':'1','top':'25%','left':'-20%','border-radius': '0'});
+        }else if($(window).width() <= 1069){
+            $('.bg-imgs').css({'width':'467px','height': '460px','opacity':'1','top':'25%','left':'-5%','border-radius': '0'});
+        }else{
+            $('.bg-imgs').css({'width':'467px','height': '460px','opacity':'1','top':'25%','left':'0%','border-radius': '0'});  
+        }
+
+        //intro 배경 이미지 화면 조절 시 이미지 크기 변화
+        $(window).resize(function(){
+            if($(this).width() <= 754){
+                $('.bg-imgs').css({'width':'400px','height': '500px','opacity':'1','top':'25%','left':'-20%','border-radius': '0'});
+            }else if($(window).width() <= 1069){
+                $('.bg-imgs').css({'width':'467px','height': '460px','opacity':'1','top':'25%','left':'-5%','border-radius': '0'});
+            }else{
+                $('.bg-imgs').css({'width':'467px','height': '460px','opacity':'1','top':'25%','left':'7%','border-radius': '0'});
+            }
+        })
+    
         
         //콘텐츠 애니메이션
         $('#intro h3 span').stop().delay(1500).animate({'bottom': '0'},500);

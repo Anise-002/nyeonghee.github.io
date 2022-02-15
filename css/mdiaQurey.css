@@ -107,7 +107,7 @@
 
 
 /*********** 태블릿 1***********/
-@media screen and (max-width : 1069px) and (min-width:850px){
+@media screen and (max-width : 1069px) and (min-width:762px){
     /* 메뉴 */
     header{
         width: 100vw;
@@ -134,6 +134,7 @@
     }
     #intro .textwrap article h2{
         font-size: 90px;
+        height: 90px;
     }
     #intro .textwrap h2 span.size-small{
         font-size: 50px;
@@ -152,9 +153,9 @@
         width:320px;
     }
     .bg-imgs img:last-child{
-        width:280px;
-        right: 70px;
-        bottom: 120px;
+        width:320px;
+        right: 0px;
+        bottom: 50px;
     }
 
 /*----------- about me----------------- */
@@ -316,7 +317,8 @@
 }
 
 /*********** 모바일 ***********/
-@media screen and (max-width:849px){
+@media screen and (max-width:762px){
+    /* //////해더////// */
     header{
         width: 100vw;
         min-width: 100vw;
@@ -332,4 +334,70 @@
         right: 6%;
         bottom: 25px;
     }
+    .nav_side{
+        display: none;
+    }
+    /* ------------intro-------------------- */
+    
+    #intro .textwrap{
+        right: 10%;
+        transition: 0.5s;
+        top: 41%;
+    }
+    #intro .textwrap>h3{
+        font-size: 24px;
+    }
+    #intro .textwrap article h2{
+        font-size: 55px;
+        height: 55px;
+    }
+    #intro .textwrap h2 span.size-small{
+        font-size: 35px;
+    }
+    #intro .stamp{
+        width: 120px;
+        top: 40%;
+        right: 8%;
+        transition: all 0.3s;
+    }
+    .decoration_vertical{
+        right: 3%;
+    }
+    .bg-img-wrap{
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+    .bg-imgs{
+        position: absolute;
+        left: 0%;
+    }
+    .bg-imgs img:first-child{
+        width:360px;
+        left: -10%;
+        opacity: 0.7;
+        transition: 0.5s;
+    }
+    .bg-imgs img:last-child{
+        width:320px;
+        right: 0px;
+        bottom: 10px;
+        opacity: 0.9;
+    }
+    #intro .intro-cont{
+        width: 80vw;
+        position: absolute;
+        left: 50%;
+        bottom: -70%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    #intro .leaf,#intro .flower{
+        display: none;
+    }
+    #intro .decoration_horizontal{
+        bottom: 40px;
+    }
+
+    /* ------------about me-------------------- */
 }
