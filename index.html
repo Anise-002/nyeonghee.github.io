@@ -14,31 +14,53 @@
     <link rel="stylesheet" href="css/mdiaQurey.css">
 </head>
 <body>
-   
+
+ <!--///////////////// 해더 //////////////////////-->  
     <header>
         <!-- 내비 -->
         <nav>
             <h1><a href="#">WEB BUBLISHER</a></h1>
-            <ul class="gnb">
-                <li><a href="#intro">Home</a></li>
-                <li><a href="#aboutMe">About me</a></li>
-                <li class="pro">
-                    <a href="#project">Project</a>
-                    <ul class="submenu">
-                        <li><a href="#Team">Team</a></li>
-                        <li><a href="#Personal">Personal</a></li>
-                        <li><a href="#side_project">Side</a></li>
-                    </ul>                
-                </li>
-                <li><a href="#connect">Connect</a></li>
-            </ul>
-            
-            <div class="btn_mobile_menu">
-                <span></span>
-                <span></span>
-                <span></span>                
+            <!-- pc/ 태블릿 용 메뉴 -->
+            <div class="list_pc_menu">
+                <ul class="gnb">
+                    <li><a href="#intro">Home</a></li>
+                    <li><a href="#aboutMe">About me</a></li>
+                    <li class="pro">
+                        <a href="#project">Project</a>
+                        <ul class="submenu pc-sub">
+                            <li><a href="#Team">Team</a></li>
+                            <li><a href="#Personal">Personal</a></li>
+                            <li><a href="#side_project">Side</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#connect">Connect</a></li>
+                </ul>
             </div>
 
+            <!-- 모바일용 토글 버튼 -->
+            <a href="#1" class="btn_mobile_menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>                             
+            </a>
+            <!-- 모바일용 메뉴 -->
+            <div class="list_mobile_menu">
+                <ul class="gnb">
+                    <li><a href="#intro">Home</a></li>
+                    <li><a href="#aboutMe">About me</a></li>
+                    <li class="pro">
+                        <a href="#project">Project</a>
+                        <ul class="submenu">
+                            <li><a href="#Team">Team</a></li>
+                            <li><a href="#Personal">Personal</a></li>
+                            <li><a href="#side_project">Side</a></li>
+                        </ul>                
+                    </li>
+                    <li><a href="#connect">Connect</a></li>
+                </ul>
+            </div>
+            
+        <!-- --------꾸밈요소--------------- -->
             <!-- 가로 라인 요소 -->
             <div class="nav_line line1"></div>
             <div class="nav_line line2"></div>
@@ -49,14 +71,14 @@
             <p>Hong Nyeonghui</p>
         </div>
     </header>
-    <!-- 세로 꾸밈 요소 고정 -->
+        <!-- 세로 꾸밈 요소 고정 -->
     <div class="decoration_vertical">
         <div class="line"></div>
         <img src="./images/dia2.png" alt="">
     </div>
 
 
-    <!-- 본문-->
+<!--///////////////// 본문//////////////////////-->
     <div id="wrapper">
         <main>
             <!-- *********인트로********* -->

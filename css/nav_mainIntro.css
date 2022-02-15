@@ -60,7 +60,7 @@ body{
     font-family:'Yes';
 }
 
-/* ***********해더********** */
+/* /////////////////해더///////////////// */
 header{
     position: fixed;
     width: 100%;
@@ -129,7 +129,7 @@ header .gnb li.active:after{
     overflow: hidden;
     z-index: 10;
 }
-.pro:hover .submenu{
+.pro:hover .pc-sub{
     height: 200px;
 }
 .submenu a{
@@ -152,14 +152,13 @@ header .gnb li.active:after{
     background:#FF7A00;
     color: #fff;
 }
-/* 모바일용 메뉴 */
+/*----- 모바일용 메뉴----- */
+/* 모바일용 토글 버튼 */
 header .btn_mobile_menu{
     width: 30px;
     height: 30px;
     position: absolute;
     bottom: 10px;
-    right: 5%;
-    display: flex;
     display: none;
 }
 header .btn_mobile_menu span{
@@ -178,6 +177,35 @@ header .btn_mobile_menu span:nth-child(2){
 header .btn_mobile_menu span:nth-child(3){
     bottom: 0;
 }
+/* 모바일용 메뉴 */
+header .list_mobile_menu{
+    width: 60%;
+    height: 100vh;
+    background: #FF9D43;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .list_mobile_menu .gnb a{
+    color: #fff;
+    font-size: 50px;
+    text-shadow: 1px 1px 4px #000;
+    width: auto;
+}
+header .list_mobile_menu .submenu{
+    position: relative;
+}
+header .list_mobile_menu .submenu a{
+    font-size: 35px;
+}
+header .list_mobile_menu .pro:hover .submenu{
+    height: 150px;
+}
+
 
 /* 가로 라인 요소 */
 header .nav_line{
