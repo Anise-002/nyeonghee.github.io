@@ -316,7 +316,7 @@
     }
 }
 
-/*********** 모바일 ***********/
+/*********** 모바일1 ***********/
 @media screen and (max-width:762px){
     /* //////해더////// */
     header{
@@ -427,7 +427,7 @@
         transform: translateX(-50%);
     }
     #aboutMe h2{
-        font-size: 35px;
+        font-size: 40px;
         margin-left: 0;
         text-align: center;
     }
@@ -468,6 +468,410 @@
     #aboutMe .skills span{
         font-size: 45px;
     }
+     /* ---------------project---------------------- */
+    /* 프로젝트 타이틀 */
+    #project .title{
+        right: -1%;
+        width: 350px;
+    }
+    #project .title h2{
+        font-size: 45px;
+        right: 11%;
+    }
+    #project .flower {
+      width: 60px;
+      left: 75px;
+    }
+    #project .line1{
+        display: none;
+    }
+    #project .line2{
+        width: 50px;
+    }
+    /* 프로젝트 내용들 */
+    #project article{
+        width: 90%;
+        flex-wrap: wrap-reverse;
+    }
+    #project .pro1{
+        margin-top: 20px;
+    }
+    #project .pro2{
+        flex-wrap: wrap;
+    }
+    #project .img_right{
+        margin: 0;
+    }
+    #project .pro-con-wrap{
+        width: 410px;
+        margin-right: 0;
+    }
+    #project .pro-con-wrap h3{
+        font-size: 35px;
+        margin-left: -65px;
+    }
+    #project .pro-img{
+        width: 100%;
+        height: 320px;
+    }
+    #project .pro-img img:first-child{
+        width: 100%;
+        height: 100%;
+    }
+    #project .pro-img img:last-child{
+        width: 120px;
+        bottom: -15px;
+        right: -15px;
+    }
+    #Personal .personal .flower{
+        left: -25px;
+    }
+    /* 사이드 프로젝트 파트 */
+    #project .side_list{
+        width: 95%;
+        transform: translate(-50%, -48%);
+    }
+    #project .side_list div{
+        width: 49%;
+    }
+    #project .side_list div img{
+        width: 100%;
+        height: 100%;
+    }
+    #project .side_list .img_wrap{
+        width: 100%;
+        height: 175px;
 
+    }
+    /* 사이드프로젝트 타이틀 */
+    #project .side_project .flower{
+        left: 165px;
+    }
+    #project .side_project .line1{
+        left: 225px;
+    }
+/* ------------connect-------------------- */
+    #connect .title h2{
+        font-size: 45px;
+    }
+    #connect .flower{
+        width: 60px;
+        right: 330px;
+    }
+    #connect .line1{
+        display: none;
+    }
+    #connect .bg-img{
+        right: -8%;
+    }
+    #connect .connect-con{
+        left: 0;
+    }
+    #connect .connect-con p{
+        width: 457px;
+    }
+    #connect .connect-con em{
+        font-size: 35px;
+    }
+    #connect .connect-con p{
+        font-size: 15px;
+    }
+    #connect .btn_more a{
+        background: #F4EBDA;
+    }
+    #connect .btn_more a:hover{
+        background: #FF9D43;
+    }
+
+    .copyright{
+        width: 130px;
+        bottom: 25px;
+        right:-5%;
+    }
+
+    
+
+}
+/*********** 모바일1 ***********/
+@media screen and (max-width:555px){
+    /* //////해더////// */
+    header{
+        width: 100vw;
+        min-width: 100vw;
+    }
+    header nav h1{
+        left: 40px;
+    }
+    header nav .pc_menu{
+        display: none;
+    }
+    header .btn_mobile_menu{
+        display: block;
+        right: 6%;
+        bottom: 25px;
+    }
+    .nav_side{
+        display: none;
+    }
+    /* ------------intro-------------------- */
+    #intro .textwrap{
+        right: 10%;
+        transition: 0.5s;
+        top: 41%;
+    }
+    #intro .textwrap>h3{
+        font-size: 24px;
+    }
+    #intro .textwrap article h2{
+        font-size: 55px;
+        height: 55px;
+    }
+    #intro .textwrap h2 span.size-small{
+        font-size: 35px;
+    }
+    #intro .stamp{
+        width: 120px;
+        top: 40%;
+        right: 8%;
+        transition: all 0.3s;
+    }
+    .decoration_vertical{
+        right: 3%;
+    }
+    .bg-img-wrap{
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+    .bg-imgs{
+        position: absolute;
+        left: 0%;
+    }
+    .bg-imgs img:first-child{
+        width:360px;
+        left: -10%;
+        opacity: 0.7;
+        transition: 0.5s;
+    }
+    .bg-imgs img:last-child{
+        width:320px;
+        right: 0px;
+        bottom: 10px;
+        opacity: 0.9;
+    }
+    #intro .intro-cont{
+        width: 80vw;
+        position: absolute;
+        left: 50%;
+        bottom: -70%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    #intro .leaf,#intro .flower{
+        display: none;
+    }
+    #intro .decoration_horizontal{
+        bottom: 40px;
+    }
+
+    /*----------- about me----------------- */
+    /* 인물일러스트 */
+    #aboutMe .pictures{
+        left: 50%;
+        top: 15%;
+        transform: translateX(-50%);
+        transition: 0.3s;
+    }
+    #aboutMe svg{
+        width: 260px;
+    }
+    #aboutMe .pictures .circle{
+        width: 100px;
+        height: 100px;
+    }
+    #aboutMe .pictures .flower{
+        width: 80px;
+        bottom: 55px;
+        right: 25px;
+    }
+    /* 내용 콘텐츠 */
+    #aboutMe .aboutwrap{
+        width: 90%;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%);
+    }
+    #aboutMe h2{
+        font-size: 40px;
+        margin-left: 0;
+        text-align: center;
+    }
+    #aboutMe .title{
+        font-size: 17px;
+    }
+    #aboutMe .sub_title{
+        font-size: 28px;
+        padding-top: 20px;
+        height: 200px;
+    }
+    #aboutMe .hashtag{
+        font-size: 12px;
+    }
+    #aboutMe .hide-content{
+        margin-top: 20px;
+        width: 95%;
+        top: 300px;
+        font-size: 14px;
+    }
+    #aboutMe .content{
+        height: 250px;
+        margin-top: 10px;
+    }
+    #aboutMe .content:hover .sub_title{
+        top: -250px;
+    }
+    #aboutMe .skills{
+        width: 100%;
+        bottom: -50px;
+    }
+    #aboutMe .skills li{
+        font-size: 20px;
+    }
+    #aboutMe .skills span{
+        font-size: 45px;
+    }
+     /* ---------------project---------------------- */
+    /* 프로젝트 타이틀 */
+    #project .title{
+        right: -1%;
+        width: 250px;
+    }
+    #project .title h2{
+        display:block;
+        font-size: 30px;
+        right: 5%;
+    }
+    #project .flower {
+      display: none;
+    }
+    #project .line2{
+        width: 30px;
+        right: -8%;
+    }
+    /* 프로젝트 내용들 */
+    #project article{
+        width: 90%;
+        flex-wrap: wrap-reverse;
+    }
+    #project .pro1{
+        margin-top: 50px;
+    }
+    #project .pro2{
+        flex-wrap: wrap;
+    }
+    #project .img_right{
+        margin: 0;
+    }
+    #project .pro-con-wrap{
+        width: 410px;
+        margin-right: 0;
+        margin-top: 50px;
+        text-align: center;
+    }
+    #project .pro-con-wrap h3{
+        font-size: 35px;
+        margin-left: 0px;
+    }
+    .btn_more{
+        text-align: center;
+        margin-top: 40px;
+    }
+    #project .pro-img{
+        width: 100%;
+        height: 320px;
+    }
+    #project .pro-img img:first-child{
+        width: 100%;
+        height: 100%;
+    }
+    #project .pro-img img:last-child{
+        width: 120px;
+        bottom: -15px;
+        right: -15px;
+    }
+    #Personal .personal .flower{
+        left: -25px;
+    }
+    /* 사이드 프로젝트 파트 */
+    #project .side_list{
+        width: 95%;
+        transform: translate(-50%, -48%);
+    }
+    #project .side_list div{
+        width: 49%;
+    }
+    #project .side_list div img{
+        width: 100%;
+        height: 100%;
+    }
+    #project .side_list .img_wrap{
+        width: 100%;
+        height: 175px;
+
+    }
+    /* 사이드프로젝트 타이틀 */
+    #project .side_project .flower{
+        left: 165px;
+    }
+    #project .side_project .line1{
+        left: 225px;
+    }
+/* ------------connect-------------------- */
+    #connect .title{
+        width: 250px;
+    }
+    #connect .title h2{
+        font-size: 24px;
+        right: 5%;
+    }
+    #connect .flower{
+        display: none;
+    }
+    #connect .line1{
+        display: none;
+    }
+    #connect .line2{
+        width: 20px;
+        right: -5%;
+    }
+    #connect .bg-img{
+        right: -8%;
+        width: 360px;
+    }
+    #connect .connect-con{
+        left: 0;
+    }
+    #connect .connect-con p{
+        width: 100%;
+    }
+    #connect .connect-con em{
+        font-size: 24px;
+    }
+    #connect .connect-con p{
+        font-size: 15px;
+    }
+    #connect .btn_more a{
+        font-size: 13px;
+        background: #F4EBDA;
+    }
+    #connect .btn_more a:hover{
+        background: #FF9D43;
+    }
+
+    .copyright{
+        width: 130px;
+        bottom: 25px;
+        right:-5%;
+    }
 
 }
