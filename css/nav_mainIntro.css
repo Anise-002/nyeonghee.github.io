@@ -103,7 +103,7 @@ header .gnb>li a{
     position: relative;
     font-size: 20px;
 }
-header .gnb li:after{
+header .pc_menu li:after{
     content: " ";
     position: absolute;
     bottom: -5px;
@@ -168,31 +168,54 @@ header .btn_mobile_menu span{
     border: 1px solid;
     position: absolute;
 }
-header .btn_mobile_menu span:nth-child(1){
+header .toggle1{
     top: 0;
+    transition: all 0.5s;
 }
-header .btn_mobile_menu span:nth-child(2){
+header .toggle2{
     top: 50%;
+    transition: 0.3s;
 }
-header .btn_mobile_menu span:nth-child(3){
-    bottom: 0;
+header .toggle3{
+    top: 100%;
+    transition: all 0.5s;
+}
+/* 토글-클래스 active */
+header .btn_mobile_menu.active .toggle1{
+    top: 50%;
+    transform: rotate(-310deg);
+    border: 2px solid #fff;
+}
+header .btn_mobile_menu.active .toggle2{
+    top: 50%;
+    opacity: 0;
+}
+header .btn_mobile_menu.active .toggle3{
+    top: 50%;
+    transform: rotate(310deg);
+    border: 2px solid #fff;
 }
 /* 모바일용 메뉴 */
 header .list_mobile_menu{
     width: 60%;
     height: 100vh;
     background: #FF9D43;
-    opacity: 0.9;
     position: absolute;
     top: 0;
-    right: -100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    right: 0;
+    display: none;
+}
+header .list_mobile_menu .gnb{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+
 }
 header .list_mobile_menu .gnb a{
     color: #fff;
-    font-size: 50px;
+    font-size: 45px;
     text-shadow: 1px 1px 4px #000;
     width: auto;
 }

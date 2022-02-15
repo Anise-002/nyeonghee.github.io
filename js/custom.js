@@ -23,7 +23,7 @@ $(function(){
         
           //메뉴 클릭시 아래바 생성
         $('.gnb>li').click(function(){
-            $('.gnb>li').removeClass('active');
+            $('.pc_menu>li').removeClass('active');
             $(this).addClass('active');
         });
 
@@ -41,26 +41,43 @@ $(function(){
         $(window).scroll(function(e){
             var scrollTop = $(this).scrollTop();
             if(scrollTop>=introTop && scrollTop <aboutMeTop){
-                $('.gnb>li').removeClass('active');
-                $('.gnb>li').eq(0).addClass('active');
+                $('.pc_menu>li').removeClass('active');
+                $('.pc_menu>li').eq(0).addClass('active');
             }
             if(scrollTop>=aboutMeTop && scrollTop <projectTop){
-                $('.gnb>li').removeClass('active');
-                $('.gnb>li').eq(1).addClass('active');
+                $('.pc_menu>li').removeClass('active');
+                $('.pc_menu>li').eq(1).addClass('active');
                 //svg애니메이션 
                 $('#aboutMe svg').css('display','block');
             }
             if(scrollTop>=projectTop && scrollTop <connectTop){
-                $('.gnb>li').removeClass('active');
-                $('.gnb>li').eq(2).addClass('active');
+                $('.pc_menu>li').removeClass('active');
+                $('.pc_menu>li').eq(2).addClass('active');
             }
              if(scrollTop>=connectTop){
-                $('.gnb>li').removeClass('active');
-                $('.gnb>li').eq(3).addClass('active');
+                $('.pc_menu>li').removeClass('active');
+                $('.pc_menu>li').eq(3).addClass('active');
             }
         
         })
     });
+
+    //모바일 토글 버튼 클릭 효과
+    var btn_menu = $('.btn_mobile_menu');
+    var menu_list =$('.list_mobile_menu');
+
+    btn_menu.click(function(){        
+        menu_list.toggle('300',function(){
+            if(btn_menu.hasClass('active')){
+                btn_menu.removeClass('active').css('z-index' , '10');  
+            }else{
+                btn_menu.addClass('active').css('z-index' , '10');  
+            }
+            menu_list.stop().animate({'right':'0%'});          
+        });
+    });
+      
+
 
    
   

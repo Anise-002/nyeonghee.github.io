@@ -317,7 +317,19 @@
 
 /*********** 모바일 ***********/
 @media screen and (max-width:849px){
-    header nav .gnb{
+    header{
+        width: 100vw;
+        min-width: 100vw;
+    }
+    header nav h1{
+        left: 40px;
+    }
+    header nav .pc_menu{
         display: none;
+    }
+    header .btn_mobile_menu{
+        display: block;
+        right: 6%;
+        bottom: 25px;
     }
 }
