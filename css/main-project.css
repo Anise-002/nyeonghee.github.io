@@ -90,13 +90,17 @@
     margin-left: -85px;
 }
 #project .pro-con-wrap h3 span{
-    margin-right: 20px;
+    margin-right: 14px;
+}
+#project .pro-con-wrap h3 span.small{
+    font-size: 20px;
+    font-weight: 300;
 }
 #project .pro-con-wrap h4{
     font-size: 20px;
-    font-family: 'Abril Fatface','Song Myung';
-    
+    font-family: 'Abril Fatface','Song Myung';    
 }
+
 #project .pro-con p{
     margin-bottom: 10px;
 }
