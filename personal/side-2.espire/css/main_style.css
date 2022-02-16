@@ -1,0 +1,356 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+ul,li{list-style: none;}
+a{text-decoration: none; }
+img{border: none;}
+
+/* 공통 */
+#wrap{
+    position: relative;
+    background-color: #feeed4;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    perspective: 1000px;
+    min-width: 1200px;
+    min-height: 768px;
+    z-index :-1;
+}
+/* 왼쪽 메뉴바 */
+#btnmenu{
+    padding: 40px;
+    position: relative;
+    z-index: 10;
+}
+#btnmenu a:last-child{
+    display: block;
+    color: white;
+    /* margin-top: 20px; */
+    font-weight: bold;
+    text-shadow: 2px 2px 2px gray;
+    font-size: 25px;
+
+}
+nav{
+    background-color: white;
+    width: 230px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    padding-left: 20px;
+    z-index: 4;
+    transform: rotateY(120deg);
+    transform-origin: left;
+    transition: 1s;
+    opacity: 0;
+}
+nav.on{
+    transform: rotateY(15deg);
+    opacity: 1;
+}
+nav .main{
+    margin-top: 50px;
+}
+nav h1{
+    margin-bottom: 20px;
+}
+nav .bold{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+nav li a{
+    display: block;
+    color: black;
+    font-size: 17px;
+    margin: 15px;
+    transition: 0.5s;
+    width: 100px;
+    height: 45px;
+}
+nav .submenu ul li a{
+    transform: translatex(0px);
+    opacity: 0;
+}
+nav .submenu:hover ul li a{
+    opacity: 1;
+    transform: translatex(20px);
+}
+nav ul li a:hover{
+    font-size: 20px;
+}
+nav .sns{
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    width: 100px;
+}
+nav .sns a{
+    color: black;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+/* -----본문-------- */
+/* 공통 */
+section div p{
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+section div.on p{
+    transform: rotateY(0deg);
+}
+section p span{
+    color: white;
+    font-size: 40px;    
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    text-shadow: 2px 2px 10px gray;
+    font-family: 'Josefin Sans', sans-serif;
+ }
+ section{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform-origin: right;
+    transition: 1.3s;
+}
+section.on{transform: rotateY(-10deg);}
+
+section div{
+    width: 100%;
+    height: 100%;
+    perspective: 700px;
+    position: absolute;
+    opacity:0;
+    z-index: 1;
+    transition: 1.5s;
+}
+section div.on{
+    z-index: 2;
+    opacity: 1;
+}
+
+
+/* face 9칸 */
+
+
+section .box1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* display: none; */
+    
+}
+.box1 p{
+    width: 25%;
+    height: 25%;
+    float: left;
+}
+section .box1 p:nth-child(1){
+    background-image: url(../images/f1.jpg);
+    height: 75%;
+    background-size:cover;
+
+}
+section .box1 p:nth-child(2){
+    background-image: url(../images/f7.jpg);
+    background-size: cover;
+    position: relative;
+    text-align: center;
+
+}
+section .box1 p:nth-child(3){
+    background-image: url(../images/ff5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+section .box1 p:nth-child(4){
+ background-color: #facea7;
+}
+section .box1 p:nth-child(5){
+    width: 50%;
+    height: 50%;
+    position: relative;
+}
+section .box1 p:nth-child(5) video{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+section .box1 p:nth-child(6){
+    background-image: url(../images/f6.jpg);
+    height: 75%;
+    background-size: 100% 100%;
+    float: right;
+}
+section .box1 p:nth-child(7){
+    background-color: #f5b984;
+    background-size: cover;
+}
+section .box1 p:nth-child(8){
+    background-image: url(../images/f4.jpg);
+    background-size: cover;
+}
+section .box1 p:nth-child(9){
+    background-color:#ffc697;
+    background-position: bottom;
+}
+/* lip 7칸 */
+section .box2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.box2 p{
+    width: 25%;
+    height: 25%;
+    float: left;    
+}
+section .box2 p:nth-child(1){
+    background-color: #f69ea1;
+}
+section .box2 p:nth-child(2){
+    background-image: url(../images/lip1.jpg);
+    width: 25%;
+    height: 75%;
+    background-size: cover;
+    float: left;
+}
+section .box2 p:nth-child(3){
+    width: 50%;
+    background-image: url(../images/lip2.jpg);
+    background-position: 40% 80%;
+    float: right;
+}
+
+section .box2 p:nth-child(4){    
+    background-image: url(../images/lip8.jpg);
+    background-size: cover;
+    height: 75%;
+    position: absolute;
+    top: 25%;
+}
+section .box2 p:nth-child(4) span{
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-shadow: 3px 3px 5px black;
+    top: 40%;
+}
+section .box2 p:nth-child(5){
+    background-image: url(../images/lip4\ copy.jpg);
+    height: 50%;
+    background-size: cover;
+}
+section .box2 p:nth-child(5) span{
+    font-size: 50px;
+    /* text-transform: uppercase; */
+    font-weight: 900;
+    text-shadow: 3px 3px 5px black;
+}
+section .box2 p:nth-child(6){
+    background-image: url(../images/lip3.jpg);
+    float: right;
+    height: 75%;
+    background-position: 50%;
+}
+section .box2 p:nth-child(7){
+    background: url(../images/lip6.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+}
+section .box2 p:nth-child(8){
+    position: absolute;
+    bottom: 0;
+    right: 25%;
+    background-color: #ffd8d3;
+}
+
+
+
+/* eyes 10칸 */
+section .box3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+section .box3 p{
+    width: 25%;
+    height: 25%;
+    float: left;
+}
+section .box3 p:nth-child(1){
+    background-image:url(../images/eyes1.jpg) ;
+    width: 50%;
+    height: 50%;
+    background-position: 20% 40% ;
+}
+section .box3 p:nth-child(2){
+    background-image: url(../images/eyes2.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+section .box3 p:nth-child(3){
+    background-image: url(../images/eyes6.jpg);
+}
+section .box3 p:nth-child(4){
+    /* background-image: url(../images/eyes7.jpg); */
+    background: rosybrown;
+}
+section .box3 p:nth-child(5){
+    background: url(../images/eye2.jpg);
+    height: 50%;
+    background-size: cover;
+    float: right;
+    background-size: cover;
+    background-position: 90% 50%;
+}
+section .box3 p:nth-child(6){
+    background-image: url(../images/eyes7.jpg);
+    background-size: cover;
+    background-position: 30%;
+    height: 50%;
+}
+section .box3 p:nth-child(7){
+
+}
+section .box3 p:nth-child(8){
+    background-image: url(../images/eyes5.png);
+    float: right;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+}
+section .box3 p:nth-child(9){
+    background: #ba7379;
+}
+section .box3 p:nth-child(10){
+    float: right;
+    background: url(../images/eyes8.jpg);
+    position: absolute;
+    background-size: cover;
+    right: 0;
+    bottom: 0;
+}

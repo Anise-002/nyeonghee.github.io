@@ -1,0 +1,323 @@
+@charset "utf-8";
+
+/* -------------------------------------------큰 화면 용 ------------------------------- */
+@media only screen and (min-width : 1824px) {
+    .banner{
+      width: 100%;
+      height: 1000px;
+      color: #fff;
+      text-align: center;
+    }
+    .banner .wapper{
+      min-width: 1500px;
+    }
+    .banner .wapper:before{
+      content: " ";
+      position: absolute;
+      top: -170px;
+      height: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background: url(../../images/national/logo.png) no-repeat;
+      background-position: center;
+      background-size: 80%;
+    }
+    .banner p{
+      margin-bottom: 30px;
+      bottom: 300px;
+      
+    }
+    .banner .history{
+      bottom: 360px;
+    }
+    .banner a{
+      bottom: 230px;
+    }
+    
+  
+    /* 공통 */
+  main section{
+    width: 100%;
+    height: 1800px;
+  }
+  .year_wrap{
+    width: 1500px;
+  }
+  .year_wrap h2{
+    font-size: 250px;
+    height: 260px;
+    width: 850px;
+  }
+  .year_wrap h2 span{
+    bottom: -400px;
+    display:block;
+  }
+  h2 span:nth-child(2){
+    left : 170px;
+    transition-delay: 0.1s;
+  }
+  h2 span:nth-child(3){
+    left : 340px;
+    transition-delay: 0.3s;
+  }
+  h2 span:nth-child(4){
+    left : 510px;
+    transition-delay: 0.5s;
+  }
+  h2 span:nth-child(5){
+    left : 680px;
+    transition-delay: 0.7s;
+  }
+  .year_wrap .text p.animate{
+    font-size: 28px;
+    width: 750px;  
+  }
+  .poster p{
+    width: 250px;
+    transition: 0.5s;
+    font-size: 25px;
+  }
+  .poster-left{
+    transform: translateX(-50px);
+  }
+  .poster-right{
+    transform: translateX(50px);
+  }
+    
+   /* **** .year_1990**** */
+  .year_1990 .year_wrap .text{
+    top: 504px;
+    right: 0;
+    z-index: 4;
+  }
+
+  .year_1990 .poster_wrap div:nth-child(1){
+    width: 300px; 
+    top: 388px;
+    left: -100%;
+  }
+  .year_1990 .poster_wrap div:nth-child(2){
+    width: 353px;
+    top: 635px;
+    left:-100%;
+  }
+  .year_1990 .poster_wrap div:nth-child(3){
+    width: 221px;
+    top: 896px;
+    left: -100%;
+  }
+  .year_1990 .poster_wrap div:nth-child(4){
+    width: 287px;
+    top: 896px;
+    left: -100%;
+  }
+  .year_1990 .poster_wrap div:nth-child(5){
+    width: 221px;
+    top: 1248px;
+    left: -100%;
+  }
+  
+  
+  /*  클래스 animate 추가시 위치  */
+  .year_1990 .year_wrap .text p.animate{
+    transform: translateX(15%);
+    opacity: 1;
+  }
+  .year_1990 .poster_wrap div.animate:nth-child(1){
+    left: 0;
+  }
+  .year_1990 .poster_wrap div.animate:nth-child(2){
+    left:320px;
+  }
+  .year_1990 .poster_wrap div.animate:nth-child(3){
+    left: 694px;
+  }
+  .year_1990 .poster_wrap div.animate:nth-child(4){
+    left:0px;
+  }
+  .year_1990 .poster_wrap div.animate:nth-child(5){
+    left:320px;
+  }
+  
+  
+  
+  /* ****year_2000**** */
+  
+  .year_2000 .year_wrap .text{
+    top: 734px;
+    left:0 ;
+    z-index: 4;
+  }
+  .year_2000 .year_wrap .text p{
+    margin-top: -20px;
+    float: right;
+  }
+  .year_2000 .poster_wrap div:nth-child(1){
+    width:322px; 
+    top: 320px;
+    right: -100%;
+  }
+  .year_2000 .poster_wrap div:nth-child(2){
+    width: 325px;
+    top: 506px;
+    right:-100%;
+  }
+  .year_2000 .poster_wrap div:nth-child(3){
+    width: 271px;
+    top: 828px;
+    right: -100%;
+  }
+  .year_2000 .poster_wrap div:nth-child(4){
+    width: 220px;
+    top: 1032px;
+    right: -100%;
+  }
+  .year_2000 .poster_wrap div:nth-child(5){
+    width: 306px;
+    top: 1170px;
+    right: -100%;
+  }
+  
+  
+  /*  클래스 animate 추가시 위치  */
+  .year_2000 .poster_wrap div.animate:nth-child(1){
+    right: 0;
+  }
+  .year_2000 .poster_wrap div.animate:nth-child(2){
+    right:342px;
+  }
+  .year_2000 .poster_wrap div.animate:nth-child(3){
+    right: 40px;
+  }
+  .year_2000 .poster_wrap div.animate:nth-child(4){
+    right:343px;
+  }
+  .year_2000 .poster_wrap div.animate:nth-child(5){
+    right:591px;
+  }
+  
+  
+  /* ****year_2010**** */
+  
+  .year_2010 .year_wrap .text{
+    top:381px;
+    right: 0;
+    z-index: 4;
+  }
+  .year_2010 .year_wrap .text p{
+    margin-top :-20px
+  }
+  .year_2010 .poster_wrap div:nth-child(1){
+    width: 329px; 
+    top: 242px;
+    left: -100%;
+  }
+  .year_2010 .poster_wrap div:nth-child(2){
+    width: 325px;
+    top: 503px;
+    left:-100%;
+  }
+  .year_2010 .poster_wrap div:nth-child(3){
+    width: 271px;
+    top: 815px;
+    left: -100%;
+  }
+  .year_2010 .poster_wrap div:nth-child(4){
+    width: 220px;
+    top: 1054px;
+    left: -100%;
+  }
+  .year_2010 .poster_wrap div:nth-child(5){
+    width: 306px;
+    top: 1157px;
+    left: -100%;
+  }
+  
+  
+  /*  클래스 animate 추가시 위치  */
+  .year_2010 .poster_wrap div.animate:nth-child(1){
+    left: 0;
+  }
+  .year_2010 .poster_wrap div.animate:nth-child(2){
+    left:350px;
+  }
+  .year_2010 .poster_wrap div.animate:nth-child(3){
+    left: 48px;
+  }
+  .year_2010 .poster_wrap div.animate:nth-child(4){
+    left:351px;
+  }
+  .year_2010 .poster_wrap div.animate:nth-child(5){
+    left:620px;
+  }
+  
+  
+  /* ****year_2020**** */
+  .year_2020 .year_wrap .text{
+    top: 903px;
+    left: -30px;
+    z-index: 4;
+    text-align: right;
+  }
+  .year_2020 .year_wrap .text h2{
+    text-shadow: 2px 2px 5px gray;
+  }
+  .year_2020 .poster_wrap div:nth-child(1){
+    width: 250px; 
+    top: 280px;
+    right: -100%;
+  }
+  .year_2020 .poster_wrap div:nth-child(2){
+    width: 353px;
+    top: 548px;
+    right:-100%;
+  }
+  .year_2020 .poster_wrap div:nth-child(3){
+    width: 287px;
+    top: 681px;
+    right: -100%;
+  }
+  .year_2020 .poster_wrap div:nth-child(4){
+    width: 321px;
+    top: 1090px;
+    right: -100%;
+  }
+  .year_2020 .poster_wrap div:nth-child(5){
+    width: 221px;
+    top: 1374px;
+    right: -100%;
+  }
+  
+  
+  /*  클래스 animate 추가시 위치  */
+  .year_2020 .poster_wrap div.animate:nth-child(1){
+    right: 79px;
+  }
+  .year_2020 .poster_wrap div.animate:nth-child(2){
+    right:345px;
+  }
+  .year_2020 .poster_wrap div.animate:nth-child(3){
+    right: 0px;
+  }
+  .year_2020 .poster_wrap div.animate:nth-child(4){
+    right:310px;
+  }
+  .year_2020 .poster_wrap div.animate:nth-child(5){
+    right:671px;
+  }
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  }

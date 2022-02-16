@@ -1,0 +1,390 @@
+@charset "utf-8";
+
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    color:#222;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+li{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    color:#222;
+
+}
+.wrap{
+    width:1200px;
+    margin:0 auto;
+}
+/* 네비게이션바 */
+header{
+    transition:200ms;
+    position:fixed;
+    z-index:99999;
+    top:0;
+    font-family:'text-p-font';
+    width: 100%;
+    background: rgba(0,9,70,0.8);
+    color: #fff;
+}
+nav{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 8px;
+    align-items: center;
+}
+nav h1 img{
+    width: 150px;
+}
+nav ul{
+    display: flex;
+    margin-left: 50px;
+}
+nav li a{
+    color: #fff;
+    display: block;
+    padding: 10px;
+}
+
+#intro{
+    width: 100%;
+    height: 100vh;
+}
+video {width: 100%;}
+/* 디즈니 페이지 */
+/* 마블페이지 */
+.marvel{
+    background:url(../images/marvel/marvel_wrap.png) no-repeat;
+    background-size:cover;
+    width:100%;
+    height:100vh;
+    position:relative;
+    overflow:hidden;
+}
+.marvel > img{
+    position:absolute;
+
+}
+/* 우측 바로가기 꾸미기 */
+.marvel .short_cut{
+    position:absolute;
+    right:-100%;
+    height:100%;
+    width:700px;
+    background:linear-gradient(282deg, #000 70%, rgba(255, 255, 255, 0) 71%);
+}
+.black{
+    transition:200ms;
+    opacity:0;
+    position:absolute;
+    content:"";
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.3)
+}
+.marvel .logo img{
+    width:500px;
+}
+.marvel .logo{
+    text-align:right;
+    margin-top:13%;
+}
+.marvel .short_cut p{
+    text-align:right;
+    padding-right:75px;
+    color:#fff;
+    display:block;
+    font-size:1.3rem;
+}
+.point{
+    font-weight:bold;
+    font-size:1.8rem;
+}
+.marvel .short_cut a{
+    position:relative;
+    text-align:center;
+    color:#fff;
+    font-size:3rem;
+    font-weight:bold;
+    font-style:italic;
+    background:linear-gradient(to bottom, red , rgb(53, 2, 2));
+    width:400px;
+    height:85px;
+    text-shadow:3px 3px 3px black;
+    display:inline-block;
+    clip-path: polygon(7% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+.marvel .short_cut p:nth-of-type(1){
+    margin-top:8%;
+    line-height:50px;
+}
+.marvel .short_cut p:nth-of-type(2){
+    margin-top:8%;
+    padding-right:0;
+}
+/* 마블 버튼 애니메이션 */
+.marvel .short_cut .button #decoration{
+    display:inline-block;
+    width:0;
+    height:500px;
+    background:rgba(255, 255, 255, 0.3);
+    position:absolute;
+    transform:rotate(18deg);
+    top:-100%;
+    right:0%;
+    transition:800ms;
+    z-index:-1;
+}
+.marvel .short_cut .button:hover #decoration{
+    width:120%;
+}
+/* 캐릭터 위치 배치 */
+.marvel > img:nth-of-type(1){
+    left:-100%;
+    top:44%;
+    width:250px;
+}
+.marvel > img:nth-of-type(2){
+    left:50%;
+    top:-100%;
+    width:250px;
+}
+.marvel > img:nth-of-type(3){
+    left:-100%;
+    top:15%;
+    width:250px;
+}
+.marvel > img:nth-of-type(4){
+    left:-100%;
+    top:0;
+    width:400px;
+}
+.marvel > img:nth-of-type(5){
+    left:35%;
+    top:-100%;
+    width:250px;
+    transform:translate(-50%,-50%);
+}
+.marvel > img:nth-of-type(6){
+    left:35%;
+    top:59%;
+    width:250px;
+    transform:translate(-50%,-50%);
+    display:none;
+}
+
+/* 픽사 */
+.pixar{
+    overflow:hidden;
+    width:100%;
+    height:100vh;
+    position:relative;
+    background:url(../images/pixar/sky.jpg) no-repeat center center;
+    background-size:cover;
+}
+/* 바로가기 꾸미기 */
+.pixar .short_cut{
+    position:absolute;
+    right:-100%;
+    height:100%;
+    width:50%;
+    /* background:linear-gradient(to left, rgba(12, 12, 12, 1) 0%, rgba(12, 12, 12, 0.6) 50%, transparent 100%); */
+    /* background:linear-gradient(to left, rgba(12, 12, 12, 0.5) 97%, transparent 100%); */
+    background:linear-gradient(to left, rgba(12, 12, 12), transparent 100%);
+}
+.pixar .short_cut p{
+    text-align:center;
+    color:#fff;
+}
+.pixar .short_cut .logo{
+    margin-top:20%;
+}
+.pixar .short_cut .logo img{
+    width:400px;
+}
+.pixar .short_cut p:nth-of-type(2){
+    font-size:2rem;
+    font-weight:bold;
+    margin:15% 0 15% 0;
+}
+.pixar .short_cut p:nth-of-type(3){
+    font-size:1.2rem;
+    font-weight:bold;
+    margin-bottom:5%;
+}
+.pixar .short_cut p:nth-of-type(4) a{
+    font-size:1.5rem;
+    font-weight:bold;
+    color:#fff;
+    width:150px;
+    display:inline-block;
+    border:4px solid white;
+    border-radius:100px;
+    z-index:99999;
+    overflow:hidden;
+    position:relative;
+    transition:300ms;
+}
+/* 버튼 꾸미기 */
+.pixar .short_cut p:nth-of-type(4) a:hover{
+    color:#222;
+    transition-delay:200ms;
+}
+.pixar .button:hover #effect{
+    width:200px;
+    height:200px;
+}
+#effect{
+    transition:300ms;
+    width:0;
+    height:0;
+    display:inline-block;
+    position:absolute;
+    border-radius:999px;
+    background:rgb(212, 232, 255);
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index:-1;
+    /* display:none; */
+}
+/* 이미지 배치 */
+.pixar > img{
+    position:absolute;
+}
+.pixar img:nth-of-type(1){
+    width:1206px;
+    top:-200px;
+    left:0;
+}
+.pixar img:nth-of-type(2){
+    bottom:-100%;
+    left:-40%;
+}
+.pixar img:nth-of-type(3){
+    bottom:-95%;
+    left:-10%;
+}
+.pixar img:nth-of-type(4){
+    bottom:-97%;
+    left:5%;
+}
+.pixar img:nth-of-type(5){
+    bottom:-80%;
+    left:20%;
+}
+.pixar img:nth-of-type(6){
+    bottom:-65%;
+    left:5%;
+}
+.pixar img:nth-of-type(7){
+    top:150%;
+    left:-39%;
+}
+.pixar img:nth-of-type(8){
+    top:145%;
+    left:20%;
+}
+.pixar img:nth-of-type(9){
+    top:100%;
+    left:-20%;
+}
+.pixar img:nth-of-type(10){
+    top:107%;
+    left:10%;
+}
+.pixar img:nth-of-type(11){
+    top:114%;
+    left:25%;
+}
+/* 풋터 */
+footer .wrap{
+    display:flex;
+    justify-content:space-between;
+}
+/* 왼쪽 풋터 */
+footer .left{
+    width:1000px;
+}
+footer .left img{
+    width:170px;
+    margin-top:30px;
+}
+footer .left ul{
+    display:flex;
+    justify-content:space-between;
+    width:900px;
+    margin:10px 0 30px 0;
+}
+footer .left ul li{
+    font-size:1.2rem;
+    font-weight:bold;
+}
+footer .left p{
+    font-size:0.9rem;
+    line-height:25px;
+    color:rgb(104, 104, 104);
+}
+footer .left p:nth-of-type(4){
+    margin-bottom:50px;
+}
+/* 오른쪽 풋터 */
+footer .right{
+    width:200px;
+}
+footer .right select{
+    margin:30px 0 180px 0;
+    width: 100%;
+    font-size:1.1rem;
+    outline:none;
+    border:none;
+    border-bottom:1px solid gray;
+    cursor:pointer;
+    color:gray;
+}
+footer .right .sns{
+    display:flex;
+    justify-content:space-between;
+    align-items:center
+}
+footer .right .sns li{
+    width:25%;
+    padding:4%;
+    opacity:0.3;
+    transition:200ms;
+}
+footer .right .sns li:hover{
+    opacity:1;
+}
+/* 마블&픽사 저해상도 모니터 */
+@media screen and (max-width: 1367px) {
+    .marvel .short_cut .logo{
+        margin-top:5%
+    }
+    .marvel .short_cut .logo img{
+        width:400px;
+    }
+    .marvel .short_cut p:nth-of-type(1){
+        margin-top: 2%;
+        font-size:1.2rem;
+        line-height:42px;
+    }
+    .pixar .short_cut .logo{
+        margin-top:70px;
+    }
+    .pixar img:nth-of-type(1){
+        width:873px;
+    }    
+    .pixar .short_cut p:nth-of-type(2){
+        margin:60px 0 60px 0;
+    }
+}
+

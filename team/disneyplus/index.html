@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index/css/style.css">
+    <link rel="stylesheet" href="./index/css/national.css">
+    <link rel="stylesheet" href="./index/css/topics.css">
+    <link rel="stylesheet" href="./index/css/disney.css">
+    <script src="./index/js/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/9d878462ea.js" crossorigin="anonymous"></script>
+    <script src="./index/js/custom.js"></script>
+    <link rel="shortcut icon" href="./index/images/diseny.ico">
+    <script>history.scrollRestoration = "manual"</script>
+    <title>메인페이지</title>
+</head>
+<body>
+     <!-- -------------------메뉴------------------------- -->
+
+    <header>
+        <nav>
+            <h1><a href="/index.html"><img src="./index/images/logo.png" alt="로고"></a></h1>
+            <ul>
+                <li><a href="#diseny">DISNEY</a></li>
+                <li><a href="#marvel">MARVEL</a></li>
+                <li><a href="#pixar">NATIONAL GEOGRAPHIC</a></li>
+                <li><a href="#national">PIXAR</a></li>
+                <li><a href="#topics">TOPIC</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- -------------------인트로------------------------- -->
+    <section id="intro">
+       <video src="./index/video/Walt Disney Opening_1080p.mp4" poster="" loop="" autoplay="" muted=""></video>
+    </section>
+     <!-- -------------------섹션1. 디즈니------------------------- -->
+    <section id="diseny">
+        <article class="main-cont">
+            <div class="cont_wrap">
+                <img src="./index/images/disney_img/diseny_logo.png" alt="디즈니 성 로고">
+                <p>디즈니 왕국의 공주들과 함께<br>
+                신나는 모험을 떠나세요!<br>
+                매력적인 애니메이션과 캐릭터들을<br>
+                지금 바로 만나세요!</p>
+                <a href="./sub/diseny/main_list.html" class="button">GO!</a>
+        </div>
+        </article>
+        <!-- 왼쪽 -->
+        <article class="left_box">
+            <div id="beast" class="wallpaper">
+                <img src="./index/images/disney_img/belle.png" alt="">
+            </div>
+            <div id="mermaid" class="wallpaper">
+                <img src="./index/images/disney_img/ariel.png" alt="">
+            </div>
+            <div id="frozen1" class="wallpaper">
+                <img class="frozen1" src="./index/images/disney_img/elsa.png" alt="">
+            </div>
+        </article>
+        <!-- 오른쪽 -->
+        <article class="right_box">
+            <div id="frozen2" class="wallpaper">
+                <img src="./index/images/disney_img/anna.png" alt="">
+            </div>
+            <div id="aladdin" class="wallpaper">
+                <img src="./index/images/disney_img/jasmine.png" alt="">
+            </div>
+            <div id="mulan" class="wallpaper">
+                <img src="./index/images/disney_img/mulan.png" alt="">
+            </div>
+        </article>
+        
+    </section>
+
+     <!-- -------------------섹션2. 마블------------------------- -->
+    <section class="marvel" id="marvel">
+        <img src="./index/images/marvel/black.png">
+        <img src="./index/images/marvel/captain.png">
+        <img src="./index/images/marvel/eye.png">
+        <img src="./index/images/marvel/hulk.png">
+        <img src="./index/images/marvel/ironman.png">
+        <img src="./index/images/marvel/thor.png">
+        <div class="black"></div>
+        <div class="short_cut">
+            <div class="logo"><img src="./index/images/marvel/marvel_logo.png"></div>
+            <p>지구를 지키는 <span class="point">슈퍼 히어로!</span><br>
+                짜릿한 <span class="point">액션!</span><br>
+                <span class="point">멋진 영웅들</span>의 이야기
+            </p>
+            <p><a href="./sub/marvel/main_list.html" class="button">GO!<span id="decoration"></span></a></p>
+        </div>
+    </section>
+     <!-- -------------------섹션3. 픽션------------------------- -->
+    <section class="pixar" id="pixar">
+        <img src="./index/images/pixar/house.png" alt="" class="house">
+        <img src="./index/images/pixar/balloon-1.png" alt="" class="normal">
+        <img src="./index/images/pixar/balloon-2.png" alt="" class="fast">
+        <img src="./index/images/pixar/balloon-3.png" alt="" class="slow">
+        <img src="./index/images/pixar/balloon-4.png" alt="" class="fast">
+        <img src="./index/images/pixar/balloon-5.png" alt="" class="slow">
+        <img src="./index/images/pixar/balloon-6.png" alt="" class="normal">
+        <img src="./index/images/pixar/balloon-7.png" alt="" class="slow">
+        <img src="./index/images/pixar/balloon-8.png" alt="" class="fast">
+        <img src="./index/images/pixar/balloon-9.png" alt="" class="fast">
+        <img src="./index/images/pixar/balloon-10.png" alt="" class="normal">
+        <div class="short_cut">
+            <p class="logo"><img src="./index/images/pixar/logo.png" alt=""></p>
+            <p>무한한 세계를 넘어서!</p>
+            <p>꿈과 희망이 가득한<br>
+            모험을 시작해 보세요!</p>
+            <p><a href="./sub/pixar/main_list.html" class="button">GO!<span id="effect"></span></a></p>
+        </div>
+    </section>
+
+     <!-- -------------------섹션4. 내셔널 지오그래픽------------------------- -->
+    <section id="national">
+        <div class="logo">
+            <img src="./index/images/national_img/national_logo.png" alt="">
+            <img class="jaguar" src="./index/images/national_img/leopard.png" alt="">
+        </div>
+        <div class="img-list">
+            <div></div>
+            <div>
+                <img class="penguin"  src="./index/images/national_img/penguin.png" alt="">
+            </div>
+            <div>
+                <img class="dolphin" src="./index/images/national_img/dolphin.png" alt="">
+            </div>
+        </div>
+        <div class="btn_more">
+            <a href="./sub/national/main_list.html">
+                세상을 향한 위대한 여정
+                <i class="fas fa-angle-double-right"></i>
+                <i class="fas fa-angle-double-right"></i>
+            </a>            
+        </div>
+
+    </section>
+
+     <!-- -------------------섹션5. 공지사항------------------------- -->
+
+    <section id="topics">
+        <article class="main_topic">
+            <div class="topic_wrap">
+                <h2>TOPICS</h2>
+                <a href="#1">
+                    <div class="topic_box main">
+                        <span class="btn_index">최근 소식</span>
+                        <p><span>2021년 11월 12일 디즈니플러스 한국 상륙!</span></p>
+                    </div>
+                </a>
+            </div>
+        </article>
+        <article class="topics_list">
+            <ul class="topic_box_wrap">
+                <li>
+                    <a href="#1">
+                        <div class="topic_box list" id="list">
+                            <span class="btn_index">출시 이벤트</span>
+                            <img src="./index/images/topics_img/list-1.jpg" alt="2022년 1월까지 가입고객, 1개월 구독 무료 이벤트">                                
+                            <p>                                    
+                                    2022년 1월까지 가입고객<br>
+                                    1개월 구독  무료 이벤트!<br>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#1">
+                        <div class="topic_box list" id="list">
+                            <span class="btn_index">최근 소식</span>
+                            <img src="./index/images/topics_img/list-2.jpg" alt="2022년 1월 16일 너와나의 경찰수업 단독 공개">                                
+                            <p>
+                                2022년 1월 16일 "너와나의 경찰수업" 단독 공개!
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#1">
+                        <div class="topic_box list">
+                            <span class="btn_index">최근 소식</span>
+                            <img src="./index/images/topics_img/list-3.jpg" alt="간편한 디즈니 플러스 사용법!">                                
+                            <p>
+                                <span>간편한 디즈니 플러스 사용법!</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#1">
+                        <div class="topic_box list">
+                            <span class="btn_index">최근 소식</span>
+                            <img src="https://w.namu.la/s/81941b8861684274aa1997a49bd31f425ac1dab300fc69f7ebdd0a446a794428de1a33d8e17354460c932f0a8728eed627f89ee74402e17c693fb71ef8edb48e6033fa5b1222c97778bfe50de46559df2be481f3e1ee2a87aac99634143b640de2db1f7fbfb0f70374494b3b1792811a" alt="완다비전">                               
+                            <p>
+                                2022년 완다 비전의 숨은 이야기 공개!
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#1">
+                        <div class="topic_box list">
+                            <span class="btn_index">최근 소식</span>
+                            <img src="./index/images/topics_img/list-5.jpg" alt="로키 시즌1">
+                            <p>
+                                마블의 악동 로키! 이번엔 주인공으로!!
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul> 
+            <div class="scroll_bar">
+                <a href="#1" class="prev"><i class="fas fa-angle-double-left"></i></a>
+                <span>SCROLL</span>
+                <a href="#1" class="next"><i class="fas fa-angle-double-right"></i></a>
+            </div> 
+        </article>
+    </section>
+
+
+
+
+     <!-- -------------------푸터------------------------- -->
+    <footer>
+        <div class="wrap">
+            <div class="left">
+                <img src="./index/images/diseny_plus.png" alt="디즈니 플러스 로고">
+                <ul>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">관심 기반 광고</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">다양한 시청 방법</a></li>
+                    <li><a href="#">디즈니+ 소개</a></li>
+                    <li><a href="#">사업자정보확인</a></li>
+                </ul>
+                <p>서울특별시 강남구 프로토스 222, 54층 (우편번호: 09845) ｜ 대표자: 진백찬</p>
+                <p>사업자 등록번호:220-81-05684 ｜ 통신판매업 신고번호: 제2021-서울강남-08438호 ｜ 비디오물배급업 신고번호: 제2018-51호</p>
+                <p>문의 : help@disneyplus.kr</p>
+                <p>© 2022 Disney and its related entities. All Rights Reserved.</p>
+            </div>
+            <div class="right">
+                <select name="language">
+                    <option value="ko">KOR</option>
+                    <option value="en">ENG</option>
+                </select>
+                <ul class="sns">
+                    <li><a href="https://www.youtube.com/c/DisneyPlusKR" target="_blink"><img src="./index/images/youtube-brands.svg" alt=""></a></li>
+                    <li><a href="https://mobile.twitter.com/disneypluskr" target="_blink"><img src="./index/images/facebook-f-brands.svg" alt=""></a></li>
+                    <li><a href="https://www.facebook.com/DisneyPlusKR/" target="_blink"><img src="./index/images/instagram-brands.svg" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/disneypluskr/" target="_blink"><img src="./index/images/twitter-brands.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

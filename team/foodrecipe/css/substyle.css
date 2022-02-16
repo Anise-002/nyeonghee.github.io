@@ -1,0 +1,312 @@
+@charset "utf-8";
+
+/* Reset CSS */
+* {margin: 0; padding: 0; box-sizing: border-box;}
+li {list-style: none;}
+a {text-decoration: none; color: #fff;}
+img {border: none;}
+body {
+    font-family: 'Roboto';
+    font-style: normal;
+    background-color: #fff;
+    width: 1440px;
+    padding-top: 130px;
+    padding-bottom: 0px;
+    margin: 0 auto;}
+
+
+/* 메인 로고 */
+#main_logo {
+    position: fixed;
+    top: 17px; left: 50%;
+    margin-left: -30px;}
+
+
+/* ICON */
+#icon {
+    position: absolute;
+    top: 10px; right: 3%;}
+
+#icon ul li {
+    width: 40px;
+    float: left;
+    text-align: center;
+    font-size: 13px;
+    transition: 0.2s;
+    color: white;}
+
+#icon ul li i {
+    display: block;
+    font-size: 20px;}
+
+#icon ul li a {
+    line-height: 15px;}
+
+#icon ul li:hover {transform: scale(1.2);}
+
+
+/* 카테고리 */
+#category {
+    width: 1440px; height: 100px;
+    position: fixed; top: 0; left: 50%;
+    margin-left: -720px;
+    z-index: 2;
+    background: #91B2DD;
+    box-shadow: 3px 3px 10px #5B7FAC;
+    border-radius: 0px 0px 80px 80px;}
+
+
+/* 카테고리 1depth */
+#category> ul {width: 100%; margin: 0 auto;}
+#category> ul> li {
+    width: 10.3%; height: 10px;
+    padding-left: 30px;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    top: 60px; left: 70px;
+    color: white;}
+
+
+/* 2 depth */
+#category> ul> li> div> ul {
+    position: absolute;
+    width: 160px;
+    left: 8px;
+    top: 39px;
+    background: #FFFFFF;
+    border: 1px solid #91B2DD;
+    box-sizing: border-box;
+    border-radius: 0px 0px 30px 30px;}
+
+#category>ul>li>div>ul>li>a {
+    display: block;
+    width: 100%;
+    height: 37px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 14px;
+    color: #333;
+    transition: 0.4;
+    margin-bottom:20px;}
+
+#category> ul> li:nth-child(4) {margin-right: 50px;}
+#category> ul> li:nth-child(5) {margin-left: 50px;}
+
+
+/* sub 메뉴 숨기기 */
+#category> ul> li> div> ul {
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;}
+
+#category> ul li:hover> div> ul {
+    opacity: 1; top: 39px; transform: rotateX(0deg);}
+
+#category>ul>li>div>ul>li>a:hover{
+    color: #91B2DD;}
+
+
+/* 본문 */
+section {width: 1440px; text-align: center;}
+
+#md {
+    padding-bottom: 15px;
+    width: 500px;
+    margin: 0 auto;
+    
+}
+
+#md p {
+    border: 3px solid #91B2DD;
+    border-radius: 30px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;}
+
+#image_1 .main1 {width: 1000px; z-index: 2; border-radius: 30px;}
+
+#image_1 .rp {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 27px;}
+
+.rp img {width: 330px; border-radius: 30px;}
+
+#image_1 .rp strong {font-size: 16px; color: #333;}
+#image_1 .rp span {font-size: 13px; color: #666;}
+
+#recipe {
+    padding-top: 50px;
+    padding-bottom: 15px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+#recipe p {
+    border: 3px solid #91B2DD;
+    border-radius: 30px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    margin: 5px;
+}
+#image_2{
+    display: flex;
+    width: 1440px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#image_2 .rec {
+    position: relative;
+    display: inline-block;
+    margin: 20px 10px 0px 10px;
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+    border-radius: 30px;
+}
+
+#image_2 .rec a{
+    display: block;
+    width: 500px;
+    height: 500px;
+}
+.rec img {width: 100%; height: 100%; transition: 0.5s; display: block;}
+
+.rec:hover img {transform: scale(1.1); }
+
+#image_2 .rec strong {font-size: 16px; color: #333;}
+#image_2 .rec span {font-size: 13px; color: #666;}
+
+
+/* 푸터 */
+footer {
+    width: 1440px; height: 320px;
+    border-radius: 80px 80px 0px 0px;
+    position: relative;
+    z-index: 1;
+    bottom: -50px; left: 50%;
+    margin-left: -720px;
+    background-color: #FF9F8D;
+    color: white;}
+
+footer ul {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;}
+
+footer p img {
+    position: absolute;
+    width: 196px; height: 196px;
+    top: 60px; left: 0px;
+    border-radius: 50%;}
+    
+footer> ul> #sns {
+    display: inline;
+    margin-left: 88%;
+    line-height: 100px;
+    padding-right: 10px;
+    width: 40px;
+    text-align: center;
+    transition: 0.2s;
+    font-size: 2em;
+    color: white;}
+
+footer ul #sns i:hover {transform: scale(1.2);}
+
+footer h3 {
+    position: absolute;
+    left: 230px;
+    top: 70px;
+    font-size: 25px;}
+
+footer ins {
+    position: absolute;
+    font-size: 14px;
+    left: 168px;
+    top: 0px;}
+
+footer h1 {
+    position: absolute;
+    left: 166px;
+    top: 43px;
+    font-size: 16px;}
+
+footer .email {
+    position: absolute;
+    left: 169px;
+    top: 65px;
+    font-size: 12px;}
+
+footer div p {
+    position: absolute;
+    width: 302px;
+    height: 37px;
+    left: 169px;
+    top: 105px;
+    border: 1.5px solid #FFFFFF;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 14px;
+    line-height: 33px;
+    padding-left: 10px;}
+
+footer div i {
+    position: absolute;
+    left: 275px;
+    top: 9px;}
+
+footer strong {
+    position: absolute;
+    width: 120px;
+    height: 10px;
+    right: 555px;
+    top: 170px;
+    font-size: 14px;}
+
+footer b {
+    position: absolute;
+    width: 120px;
+    height: 10px;
+    right: 430px;
+    top: 170px;
+    font-size: 14px;}
+
+footer .about1 {
+    position: absolute;
+    width: 52px;
+    height: 13px;
+    left: 520px;
+    top: 177px;
+    font-size: 12px;
+    line-height: 18px;}
+
+footer .about2 {
+    position: absolute;
+    width: 52px;
+    height: 13px;
+    left: 645px;
+    top: 177px;
+    font-size: 12px;
+    line-height: 18px;}
+
+footer span img{
+    position: absolute;
+    width: 80px;
+    height: 89px;
+    right: 300px;
+    top: 155px;}
+
+footer .company {
+    position: absolute;
+    width: 210px;
+    height: 65px;
+    right: 185px;
+    top: 148px;
+    font-size: 12px;
+    line-height: 26px;
+    font-weight: bold;}

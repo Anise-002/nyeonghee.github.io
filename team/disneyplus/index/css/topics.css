@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+
+/* 공통 css-----------------------------------*/
+.topic_box{
+    background: #fff;
+    border-radius: 30px;
+}
+#topics .topic_box p{
+    position: absolute;
+    width: 100%;
+    height: 35%;
+    bottom: 0;
+    background: #fff;    
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 0 40px;
+    flex-wrap: wrap;
+}
+#topics .btn_index{
+    position: absolute;
+    padding: 15px 30px;
+    background: #3E0772;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: bold;
+    z-index: 1;
+}
+/* 공통 css 끝--------------------------------- */
+
+
+
+#topics{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #3E0773 15.67%, #420979 28.41%, #3E1886 41.15%, #3B2290 55.64%, #372F9C 66.18%, #3439A6 78.04%, #3044B0 89.46%, #2E4CB7 100%);
+    position: relative;
+    overflow: hidden;
+}
+/* 메인 topic */
+#topics .main_topic{
+    width: 60%;
+    height: 70%;
+    position: absolute;  
+    /* background: darkcyan; */
+    float: left;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#topics .main_topic .topic_wrap{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+#topics .main_topic h2{
+    font-size: 80px;
+    color: #fff;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+#topics .main_topic .main{
+    position: relative;
+    width: 90%;
+    height: 70%;
+    margin: 0 auto;
+    background: url(../images/topics_img/main-topic.png) center no-repeat;
+    background-size: cover;
+    box-shadow: 25px 25px 25px rgba(0, 0, 0, 0.5);
+    overflow: hidden;   
+}
+#topics .main_topic .main:after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65%;
+    background: rgba(255, 255, 255, 0.432);
+    font-size: 23px;
+    opacity: 0;
+    transition: 0.5s;
+}
+#topics .main_topic .btn_index{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+#topics .main_topic p{
+    font-size: 25px;
+}
+/* 호버 효과 */
+#topics .main_topic .topic_box:hover:after{
+    opacity: 1;
+}
+#topics .main_topic .topic_box:active{
+    transform: translate(5px, 5px);
+    box-shadow: 20px 20px 25px rgba(0, 0, 0, 0.199);
+}
+
+
+
+
+
+
+/*****************topics_ list************************** */
+
+#topics .topics_list{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    float: right;
+}
+#topics .topics_list .topic_box_wrap{
+    height:90%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.topic_box_wrap.animated{
+    transition: 0.5s ease-out;
+}
+#topics .topics_list .list{
+    min-width: 426px;
+    height: 335px;
+    width: 82%;    
+    height: 40vh;
+    margin-bottom: 5vh;
+    position:relative;
+    overflow: hidden;
+}
+#topics .topics_list .list img{
+    width:100%;
+}
+#topics .topics_list .list:after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65%;
+    background: rgba(255, 255, 255, 0.432);
+    font-size: 23px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#topics .topics_list .btn_index{
+    margin: 20px 0 0 20px;
+}
+
+#topics .topics_list .list:after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65%;
+    background: rgba(255, 255, 255, 0.432);
+    font-size: 23px;
+    opacity: 0;
+    transition: 0.5s;
+}
+/* 호버 효과 */
+#topics .topics_list .list:hover:after{
+    opacity: 1;
+}
+
+/* 스크롤바 위치 */
+#topics .topics_list .scroll_bar{
+     position : absolute;
+     top: 50%;
+     right: -10%;
+     transform:translateY(-30%) rotate(90deg);
+     font-size: 30px;
+     color: #fff;
+     height: 5%;
+     display: flex;
+     align-items: center;
+}
+#topics .topics_list .scroll_bar a{
+    display: block;
+    color: #fff;
+    font-size: 45px;    
+}
+#topics .topics_list .scroll_bar span{
+    display: block;
+    margin: 0 40px;
+}
+

@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; font-family: 'Righteous', cursive; font-weight: 200;}
+ul,li{list-style: none;}
+a{text-decoration: none;}
+
+
+/* 전체 영역 */
+body{
+    background: url(../image/bg1.jpg) fixed;
+    background-size:100%; 
+}
+#wrap{
+    width: 1100px;
+    height: 850px;
+    background: white;
+    margin: 50px auto;
+    border-radius: 50px;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+/* 로고 */
+#logo{
+    position: absolute;
+    top: 80px;
+    left: 60px;
+}
+#logo img{
+    width: 250px;
+}
+/* sns */
+#sns{
+    position: absolute;
+    top: 100px;
+    right: 70px;
+}
+#sns li{
+    display: inline-block;
+}
+#sns li a{
+    display: block;
+    color: #ff5a5f;
+    font-size: 2.2em;
+    margin-left: 10px;
+    transition: 0.5s;
+    opacity: 0.7;
+}
+#sns li a:hover{
+    transform: scale(1.2);
+    opacity: 1;
+    
+}
+/* ------------ 본문영역----------------------- */
+section{
+    position: relative;
+    top: 200px;
+    left: 50%;
+    width: 90%;
+    margin-left: -450px;
+
+}
+section article{
+    width: 90%;
+    height: 45px;
+    overflow: hidden;   
+    position: relative;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ff5a5f;
+}
+section article .video{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+}
+section article h2{
+    position: absolute;
+    font-size: 30px;
+}
+section article h3{
+    position: absolute;
+    font-size: 40px;
+    color: #ff5a5f;
+    text-shadow: 0.8px 0.8px white;
+    bottom: 50px;
+    left: -600px;
+    z-index: 2;
+}
+section article p{
+    position: absolute;
+    top: 20px;
+    right: -700px;
+    color: white;
+    text-shadow: 1px 1px 2px gray;
+    width: 700px;
+    text-align: right;
+    z-index: 3;
+}
+section article span{
+    display: block;
+    position: absolute;
+    right: 20px;
+    bottom : 10px;
+    font-size: 35px;
+    z-index: 4;
+    transition: 0.8s;
+}
+
+section article:hover span{
+    transform: rotate(360deg);
+}
+p{
+    transform: rotate(360deg);
+}
+/* foooter */
+
+footer{
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    background: #ff5a5f;
+    bottom: 0;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+footer ul{
+    display: flex;
+}
+footer li a{
+    display: block;
+    margin: 0 15px;
+    color: aliceblue;
+    font-weight: 100;
+    letter-spacing: 2px;
+    height: 70px;
+    line-height: 70px;
+}
+footer li:first-child  a{
+    margin-left: 40px;
+}
+footer ul li:last-child a{
+    font-size: 10px;
+    position: absolute;
+    right: 20px;
+}

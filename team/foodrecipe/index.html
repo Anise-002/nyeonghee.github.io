@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>푸드레시피</title>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/jquery.bxslider.js"></script>    
+    <script src="js/main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="./image/favicon-16x16.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    <script>
+        AOS.init();
+    </script>
+    <div id="wrap">
+        
+        <!-----------네비----------------- -->
+        <nav>
+            <!-- 로고 -->
+            <h1>
+                <a href="#"><img src="./image/logo.png" alt="logo"></a>
+           </h1>
+            <!-- 로고 끝 -->
+            <ul class="menu_left">
+               <li class="on"><a href="#" >테마레시피</a>
+                    <ul class="sub_menu">
+                        <li><a href="#">요리초보</a></li>
+                        <li><a href="#">자취생</a></li>
+                        <li><a href="#">캠핑요리</a></li>
+                        <li><a href="#">다이어트</a></li>
+                        <li><a href="#">이유식</a></li>
+                        <li><a href="#">도시락</a></li>
+                    </ul>
+                </li>
+               <li><a href="#">기본레시피</a>
+                    <ul class="sub_menu">
+                        <li><a href="./subpage.html">메인요리</a></li>
+                        <li><a href="#">사이드요리</a></li>
+                        <li><a href="#">양념/소스</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">디저트레시피</a>
+                    <ul class="sub_menu">
+                        <li><a href="#">디저트요리</a></li>
+                        <li><a href="#">음료/술</a></li>
+                    </ul>
+                 </li>
+               <li><a href="#">손질법</a></li>
+            </ul>
+            
+            <ul class="menu_right">
+               <li ><a href="#">이벤트</a></li>
+               <li ><a href="#">공지사항</a></li>
+               <li ><a href="#">Q & A</a></li>
+               <li ><a href="#">문의하기</a></li>
+            </ul>
+            <ul class="menu_login">
+               <li><a href="#"><i class="fa fa-heart"></i>찜</a></li>
+               <li><a href="#"><i class="fa fa-user"></i>로그인</a></li>
+            </ul>
+        </nav>
+        <!-- --------네비끝!------------- -->
+        <!-- -------------배너 시작---------- -->
+        
+            <div class="banner">
+               <ul class="bxslider">
+                   <li><img src="./image/banner1.jpg" alt=""><a href=""></a></li>
+                   <li><img src="./image/banner2.jpg" alt=""><a href=""></a></li>
+                   <li><img src="./image/banner3.jpg" alt=""><a href=""></a></li>
+               </ul>
+            </div>
+
+
+        <section>            
+        <!-- 본문1 -랭킹 파트 -->
+            <article class="rank">
+                <h3>맛있는 이달의 랭킹</h3>
+                <p>너무 치열했던 맛있는 녀석들!<br> 
+                    1월 동안 사랑 받은 레시피를 공개합니다.!</p>
+                <div class="rank_con" >
+                    <div>
+                        <img src="./image/img1.png" alt="제육볶음">
+                        <p>
+                            <span class="title1">제육볶음</span><br>
+                            국민의 반찬, 마음의 안식<br>
+                            <span class="text">#돼지고기 #한국인에게 사랑 받는 음식!  </span>                      
+                        </p>
+                        <img class="medal" src="./image/rank1.png" alt="1등배찌">
+                    </div>
+                    <div>
+                        <img src="./image/img2.png" alt="김치볶음밥">
+                        <p>
+                            <span class="title1">김치볶음밥</span><br>
+                            김치랑 밥만 있으면 만들수 있는 초간단 식사!<br>
+                            <span class="text">#김치 #밥 #자취생 #가장 쉬운 요리 베스트 </span>
+                        </p>
+                        <img class="medal" src="./image/rank2.png" alt="2등배찌">
+                    </div>
+                    <div>
+                        <img src="./image/img3.png" alt="비빔국수">
+                        <p>
+                            <span class="title1">비빔국수</span><br>
+                            추운 겨울에도 생각나는 시원한 비빔 국수!<br>
+                            <span class="text">#언제 먹어도 맛있는 면요리 #새콤달콤!</span>
+                        </p>
+                        <img class="medal" src="./image/rank3.png" alt="3등배찌">
+                    </div>
+                </div>
+            </article>
+        <!--본문2- 카테고리 파트 -->
+            <article >
+                <div></div>
+                <h3>푸드레시피에만 있는 맛있는 카테고리</h3>
+                <p>내가 찾던 카테고리가 여기에!<br>
+                    카테고리를 통해 쉽고 빠르게 레시피를 찾아보세요!</p>
+                
+                <ul class="menu_list">
+                    <li data-aos="fade-down" data-aos-duration="1200">
+                        <a href="#">
+                            <img src="./image/img4.jpg" alt="테마레시피">
+                            <p class="title2">테마레시피</p>
+                            <p class="text">
+                                #요리초보 #자취생 #캠핑요리<br>
+                                    #다이어트 #이유식 #도시락
+                            </p>
+                            
+                        </a>
+                    </li>
+                    <li data-aos="fade-down" data-aos-duration="1200" data-aos-delay = "100" >
+                        <a href="#">
+                            <img src="./image/img5.jpg" alt="기본레시피">
+                            <p class="title2">기본레시피</p>
+                            <p class="text">
+                                #국,찌개 레시피 #면요리 레시피<br>
+                                    #무침 레시피 #가정식백반<br>
+                                    #일급비밀 양념비법
+                            </p>
+                        </a>
+                    </li>
+                    <li data-aos="fade-down" data-aos-duration="1200" data-aos-delay = "200">
+                        <a href="#">
+                            <img src="./image/img6.jpg" alt="디저트레시피">
+                            <p class="title2">디저트 레시피</p>
+                            <p class="text">
+                                #빵 #마카롱 #케이크 #베이커리<br>
+                                    #칵테일 #다과
+                            </p>
+                        </a>
+                    </li>
+                    <li data-aos="fade-down" data-aos-duration="1200" data-aos-delay = "300">
+                        <a href="#">
+                            <img src="./image/img7.jpg" alt="재료 손질법">
+                            <p class="title2">재료 손질법</p>
+                            <p class="text">
+                                #야채 #육류 #해산물<br>
+                                    #과일 #건어물 #곡물
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+            <!--본문3 - 상세설명  -->
+            <article>
+                <div></div>
+                <div data-aos="fade-right" data-aos-duration="1300">
+                    <img src="./image/png1.png" alt="캠핑 일러스트">
+                </div>
+                <div data-aos="fade-left" data-aos-duration="1000" id="move_up">
+                    <span class="title2">당신의 상황에 맞춤 레시피!</span><br>
+                    <span class="color-blue size15">#캠핑 #이유식 #요리초보 #자취생</span>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="1500" id="move_up">                    
+                        <span class="title2">레시피가 필요한 누구나!</span><br>
+                        <span class="color-blue size20">간편</span>하고 <span class="color-blue size20">쉽게</span> 레시피를 찾을 수 있어요!                    
+                </div data-aos="fade-left" data-aos-duration="1000">
+                <div class="btn" data-aos="fade-left" data-aos-duration="1200">
+                    <a href="#">지금 당장 전체 레시피 보러가기 -></a>
+                </div>
+            </article>
+            <!-- 본문4 --상세설명 2 -->
+            <article>
+                <div>
+                    <p data-aos="fade-right" data-aos-duration="1000">
+                        매일 다채로운 식사시간을 가져보세요!<br>
+                        오늘은 내가 요리사! 
+                    </p>
+                    <div class="btn" data-aos="fade-right" data-aos-duration="1300">
+                        <a href="#">지금 당장 전체 레시피 보러가기 -></a>
+                    </div>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="1600">
+                    <img src="./image/png2.jpg" alt="가족 일러스트">
+                </div>                
+                
+            </article>
+
+            <!-- 본문 5 -- 핫한 레시피 리스트 -->
+            <article>
+                <div>
+                    <h3>요즘 HOT한 레시피</h3>
+                    <p>sns를 뜨겁게 한 맛있는 레시피들! 요리초보여도 따라할 수 있어요!</p>
+                </div>
+                
+                <div id="slides">
+                    <a href="#1" class="left"><span class="left-btn"><i class="fas fa-chevron-left"></i></span></a>
+                    <a href="#1" class="right"><span class="right-btn"><i class="fas fa-chevron-right"></i></span></a>
+                    <ul  id="slide">
+                        <li>
+                            <a href="#">
+                                <img src="./image/img8.jpg" alt="연어덮밥">
+                                <p class="title2">연어 회 덮밥</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./image/img9.jpg" alt="우육면">
+                                <p class="title2">우육면</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./image/img10.jpg" alt="달콤 떡꼬치 ">
+                                <p class="title2">달콤 떡꼬치 </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./image/img11.jpg" alt="아보카도명란밥">
+                                <p class="title2">아보카도명란밥</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./image/img12.jpg" alt="키토 계란 김밥">
+                                    <p class="title2">키토 계란 김밥</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./image/img14.jpg" alt="초코무스케이크">
+                                    <p class="title2">초코무스케이크</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./image/img15.jpg" alt="오징어 간장 조림">
+                                    <p class="title2">오징어 간장 조림</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./image/img16.jpg" alt="추억의 도시락">
+                                    <p class="title2">추억의 도시락</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./image/img17.jpg" alt="오므라이스도시락">
+                                    <p class="title2">오므라이스도시락</p>
+                            </a>
+                        </li>                    
+                    </ul>
+                </div>
+                
+            </article>     
+            <!-- 푸터 -->
+        <footer>
+            <section>
+                <div class="pro-img"></div>
+                <div>
+                    <h3>Who we are!?</h3>
+                    <a href="#" class="size12">more here!!</a>
+                    <p class="size16">우리의 이야기가 궁금하다면?</p>
+                    <p class="size12">매 월 “푸드레시피”의  이야기를 이메일로 받아보세요!</p>
+                    <form>
+                        <input type="text" class="size12" placeholder="put  your email, please">
+                        <a href="#1"><i class="fas fa-arrow-right"></i></a>
+                    </form>
+                </div>
+            </section>
+            <section>
+                <ul>
+                    <li><span>ABOUT MORE</span>
+                        <ul>
+                            <li><a href="#">ABOUT US</a></li>
+                            <li><a href="#">CAREERS</a></li>
+                            <li><a href="#">COMPANY BLOG</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>   
+                    <li><span>ABOUT MORE</span>
+                        <ul>
+                            <li><a href="#">ABOUT US</a></li>
+                            <li><a href="#">CAREERS</a></li>
+                            <li><a href="#">COMPANY BLOG</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                </ul>
+            </section>
+            <section >
+                <img src="./image/logo.png" alt="logo">                
+                <p>
+                    회사명 : (주)푸피<br>
+                    회사 주소 : 충북 청주시 흥덕구 사창동 153<br>
+                    대표명 : 이그린<br>
+                    전화번호 : 043)123-4568 <br>
+                </p>
+            </section>
+        </footer>       
+    </div>
+    
+</body>
+</html>
+
+
+
+
+
+<!-- 배너 일러스트  -->
+<!-- <a href="https://www.freepik.com/vectors/kitchen">Kitchen vector created by pikisuperstar - www.freepik.com</a> -->
+<!-- <a href='https://www.freepik.com/vectors/background'>Background vector created by freepik - www.freepik.com</a> -->

@@ -1,0 +1,155 @@
+@charset "utf-8";
+#diseny{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#000 0%, #420979 35%, rgba(56,44,154,0.87) 60%, rgba(46,76,183,0.77) 80%, rgba(46,175,183,0.71) 100%);
+}
+
+/* ---공통 css ------------------ */
+/* 각 wllpaper 너비 공통 */
+.wallpaper{
+    width: 33.3%;
+    height: 100%;
+    position: relative;
+    transition: all 0.5s;
+    flex-shrink: 0;
+    overflow: hidden;
+    box-shadow: 3px 0px 20px #fff, -3px 0px 20px #fff;
+}
+.wallpaper img{
+    position: absolute;
+    min-width: 250px;
+    transition: 0.5s;
+}
+/* ---공통 css 끝 -------------------- */
+/* 메인 콘텐츠 */
+#diseny .main-cont{
+    width: 30%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 100px;
+    opacity: 0;
+}
+#diseny .main-cont .cont_wrap{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+#diseny .main-cont .cont_wrap img{
+    display: block;
+    width: 100%;
+    margin-top: 100px;
+}
+#diseny .main-cont .cont_wrap p{
+    margin-top: 57px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 23.5px;
+    letter-spacing: 2px;
+}
+#diseny .main-cont .cont_wrap a{
+    display: inline-block;
+    padding: 10px 50px;
+    background: #fff;
+    border-radius: 50px;
+    margin-top: 55px;
+}
+
+
+
+
+
+/* 왼쪽 박스 */
+
+#diseny .left_box{
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    display: flex;
+}
+#beast{
+    background: url(../images/disney_img/bg-1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    overflow: hidden;
+}
+#beast img{
+    width: 510px;
+    bottom: -150px;
+    left: -60%;
+
+}
+#mermaid{
+    background: url(../images/disney_img/bg-2.jpg) no-repeat;
+    background-size: cover;
+    z-index: 2;
+}
+#mermaid img{
+    width: 500px;
+    left: -40%;
+    top:10%;
+}
+
+#frozen1{
+    background: url(../images/disney_img/bg-3.jpg) no-repeat;
+    background-size: cover;
+    overflow: visible;
+}
+#frozen1 img{
+    width: 480px;
+    left: -70%;
+    bottom: -100px;
+
+}
+
+
+
+
+
+/* 오른쪽 박스 */
+#diseny .right_box{
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    justify-content: right;
+    display: flex;
+}
+#frozen2{
+    background: url(../images/disney_img/bg-4.jpg);
+    background-size: cover;
+    overflow: visible;
+    z-index: 1;
+
+}
+#frozen2 img{
+    width: 315px;
+    bottom: -100px;
+    right: 0%;
+}
+#aladdin{
+    background: url(../images/disney_img/bg-5.jpg);
+    background-size: cover;
+    z-index: 2;
+}
+#aladdin img{
+    width: 400px;
+    top:20%;
+    right: -30%;
+}
+#mulan{
+    background: url(../images/disney_img/bg-6.jpg);
+    background-size: cover;
+    z-index: 3;
+}
+#mulan img{
+    width: 400px;
+    bottom: -150px;
+    right: -100%;
+}
