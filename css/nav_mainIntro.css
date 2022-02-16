@@ -33,7 +33,8 @@ body{
 /* 사이트 버튼 */
 .btn_more{
     margin-top: 25px;
-    text-align: left;
+    display: flex;
+    flex-wrap: nowrap;
 }
 .btn_more a{
     display: inline-block;

@@ -144,6 +144,9 @@
         right: 8%;
         transition: all 0.3s;
     }
+    #intro .flower{
+        display: none;
+    }
    
     .bg-imgs{
         position: absolute;
@@ -356,9 +359,15 @@
     }
     #intro .stamp{
         width: 120px;
-        top: 40%;
-        right: 8%;
+        top: 35%;
+        right: 0%;
         transition: all 0.3s;
+    }
+    #intro .flower{
+        display: none;
+    }
+    #intro .textwrap article .title:after{
+        display: none;
     }
     .decoration_vertical{
         right: 3%;
@@ -472,7 +481,7 @@
     /* 프로젝트 타이틀 */
     #project .title{
         right: -1%;
-        width: 350px;
+        width: 410px;
     }
     #project .title h2{
         font-size: 45px;
@@ -480,7 +489,7 @@
     }
     #project .flower {
       width: 60px;
-      left: 75px;
+      left: -35px;
     }
     #project .line1{
         display: none;
@@ -524,7 +533,10 @@
         right: -15px;
     }
     #Personal .personal .flower{
-        left: -25px;
+        left: -145px;
+    }
+    .btn_more{
+        justify-content: center;
     }
     /* 사이드 프로젝트 파트 */
     #project .side_list{
@@ -545,7 +557,7 @@
     }
     /* 사이드프로젝트 타이틀 */
     #project .side_project .flower{
-        left: 165px;
+        left: 58px;
     }
     #project .side_project .line1{
         left: 225px;
@@ -623,7 +635,7 @@
         font-size: 24px;
     }
     #intro .textwrap article h2{
-        font-size: 55px;
+        font-size: 40px;
         height: 55px;
     }
     #intro .textwrap h2 span.size-small{
@@ -631,9 +643,12 @@
     }
     #intro .stamp{
         width: 120px;
-        top: 40%;
-        right: 8%;
+        top: 35%;
+        right: 0%;
         transition: all 0.3s;
+    }
+    #intro .textwrap article .title:after{
+        display: none;
     }
     .decoration_vertical{
         right: 3%;
@@ -801,6 +816,9 @@
     }
     #Personal .personal .flower{
         left: -25px;
+    }
+    .btn_more{
+        justify-content: center;
     }
     /* 사이드 프로젝트 파트 */
     #project .side_list{
