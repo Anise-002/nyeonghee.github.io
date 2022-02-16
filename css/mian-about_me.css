@@ -1,16 +1,25 @@
 @charset "utf-8";
 
 /* 사진요소 */
+#aboutMe .aboutMe_wrap{
+    width: 95%;
+    max-width: 1650px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
 #aboutMe .pictures{
     position: absolute;
     top: 30%;
     left: 180px;
     width: 298px;
     height: 357px;
+    transition: all 0.5s;
 }
 #aboutMe svg{
     width: 350px;
     display: none;
+    transition: all 0.5s;
 }
 #aboutMe .pictures .circle{
     width: 145px;

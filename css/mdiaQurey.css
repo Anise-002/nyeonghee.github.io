@@ -1,6 +1,78 @@
 @charset "UTF-8";
+/*********** 모니터1 큰 스크린 ***********/
+@media screen and (min-width:1500px){
+    /* -----intro----- */
+    .bg-img-wrap img:first-child{
+        width: 450px;
+    }
+    .bg-img-wrap img:last-child{
+        width: 450px;
+    }
+    #intro .textwrap{
+        right: 10%;
+    }
+    #intro .textwrap article h2{
+        font-size: 135px;
+        height: 135px;
+    }
+    #intro .textwrap h2 span.size-small{
+        font-size: 70px;
+    }
+    #intro .textwrap article h2:last-child{
+        height: 75px;
+    }
+    #intro .stamp{
+        top: 15%;
+        right: 5%;
+        width: 150px;
+    }
+    /* -----main----- */
+    #aboutMe .pictures{
+        width: 500px;
+        height: 500px;
+        top: 27%;
+        right: 95%;
+    }
+    #aboutMe svg{
+        width: 500px;
+        height: 500px;
+    }
+    #aboutMe .pictures .circle{
+        width: 200px;
+        height: 200px;
+        top: -45px;
+    }
+    #aboutMe .pictures .flower{
+        width: 170px;
+    }
+    #aboutMe .aboutwrap{
+        width: 710px;
+        right: 12%;
+        top: 28%;
+    }
+    #aboutMe h2{
+        font-size: 75px;
+        margin-left: -30px;
+    }
+    #aboutMe .title{
+        font-size: 35px;
+    }
+    #aboutMe .skills{
+        bottom: -70px;
+    }
+    #aboutMe .skills ul{
+        justify-content: flex-start;
+    }
+    #aboutMe .skills span{
+        font-size: 65px;
+    }
 
-/*********** 모니터1 노트북 ***********/
+    /* ----team project----- */
+
+}
+
+
+/*********** 모니터2 노트북 ***********/
 @media screen and (max-width : 1366px) and (min-width:1200px){
     header{
         width: 100vw;
@@ -604,7 +676,7 @@
     
 
 }
-/*********** 모바일1 ***********/
+/*********** 모바일2 ***********/
 @media screen and (max-width:555px){
     /* //////해더////// */
     header{

@@ -18,6 +18,8 @@ $(function(){
             $('.bg-imgs').css({'width':'400px','height': '500px','opacity':'1','top':'25%','left':'-20%','border-radius': '0'});
         }else if($(window).width() <= 1069){
             $('.bg-imgs').css({'width':'467px','height': '460px','opacity':'1','top':'25%','left':'-5%','border-radius': '0'});
+        }else if($(window).width()>1500){
+            $('.bg-imgs').css({'width':'600px','height': '600px','opacity':'1','top':'15%','left':'5%','border-radius': '0'});
         }else{
             $('.bg-imgs').css({'width':'467px','height': '460px','opacity':'1','top':'25%','left':'0%','border-radius': '0'});  
         }
@@ -28,6 +30,8 @@ $(function(){
                 $('.bg-imgs').css({'width':'400px','height': '500px','opacity':'1','top':'25%','left':'-20%','border-radius': '0'});
             }else if($(window).width() <= 1069){
                 $('.bg-imgs').css({'width':'467px','height': '460px','opacity':'1','top':'25%','left':'-5%','border-radius': '0'});
+            }else if($(window).width()>1500){
+                $('.bg-imgs').css({'width':'600px','height': '600px','opacity':'1','top':'15%','left':'5%','border-radius': '0'});
             }else{
                 $('.bg-imgs').css({'width':'467px','height': '460px','opacity':'1','top':'25%','left':'7%','border-radius': '0'});
             }

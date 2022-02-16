@@ -317,10 +317,17 @@ section{
     padding-top: 100px;
     position: relative;
 }
+#intro .intro_wrap{
+    width: 95%;
+    max-width: 1650px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
 /* 텍스트 */
 #intro .textwrap{
     position: absolute;
-    top: 35%;
+    top: 30%;
     right: 20%;
     line-height: 45px;
 }
@@ -349,10 +356,6 @@ section{
 }
 #intro .textwrap h2 span.size-small{
     font-size: 60px;
-}
-#intro .textwrap article h2{
-    height: 110px;
-    overflow: hidden;
 }
 #intro .textwrap article h2:last-child{
     height: 70px;
